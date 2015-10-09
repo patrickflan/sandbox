@@ -17,8 +17,8 @@
       font-size: 17px; } }
   @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
     html {
-      font-size: 18px;
-      line-height: 2rem; } }
+      font-size: 32px;
+      line-height: 2.2rem; } }
 
 body {
   margin: 0; }
@@ -87,30 +87,24 @@ section {
     background-position-y: top; }
   .background-image.fixed {
     background-attachment: fixed; }
-  .background-image.bokeh {
-    width: 100%;
-    min-height: 100vh; }
-    @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
-      .background-image.bokeh {
-        background-image: url(../images/bokeh/BF-Bokeh_1492x1492.jpg); } }
-    @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
-      .background-image.bokeh {
-        background-image: url(../images/bokeh/BF-Bokeh_2000x2000.jpg); } }
-    @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
-      .background-image.bokeh {
-        background-image: url(../images/bokeh/BF-Bokeh_2000x2000.jpg); } }
-  .background-image.banner-one {
-    width: 100%;
-    min-height: 100vh; }
-    @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
-      .background-image.banner-one {
-        background-image: url(../images/banner-one/Image-Test_1492x1492_q8.jpg); } }
-    @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
-      .background-image.banner-one {
-        background-image: url(../images/banner-one/Image-Test_2000x2000_q8.jpg); } }
-    @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
-      .background-image.banner-one {
-        background-image: url(../images/banner-one/Image-Test_2000x2000_q8.jpg); } }
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
+    .background-image.bokeh {
+      background-image: url(../images/bokeh/BF-Bokeh_1492x1492.jpg); } }
+  @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
+    .background-image.bokeh {
+      background-image: url(../images/bokeh/BF-Bokeh_2000x2000.jpg); } }
+  @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
+    .background-image.bokeh {
+      background-image: url(../images/bokeh/BF-Bokeh_2000x2000.jpg); } }
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
+    .background-image.banner-one {
+      background-image: url(../images/banner-one/Image-Test_1492x1492_q8.jpg); } }
+  @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
+    .background-image.banner-one {
+      background-image: url(../images/banner-one/Image-Test_2000x2000_q8.jpg); } }
+  @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
+    .background-image.banner-one {
+      background-image: url(../images/banner-one/Image-Test_2000x2000_q8.jpg); } }
 
 /*@media (device-aspect-ratio: 10/16) {
     background-size: inherit;

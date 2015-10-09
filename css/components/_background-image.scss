@@ -16,8 +16,6 @@
         background-attachment: fixed;
     }
     &.bokeh {
-        width: 100%;
-        min-height: 100vh;
         // ratio mobile
         @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
             background-image: url(../images/bokeh/BF-Bokeh_1492x1492.jpg);
@@ -34,8 +32,6 @@
         }
     }
     &.banner-one {
-        width: 100%;
-        min-height: 100vh;
         // ratio mobile
         @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
             background-image: url(../images/banner-one/Image-Test_1492x1492_q8.jpg);
