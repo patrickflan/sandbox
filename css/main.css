@@ -111,12 +111,6 @@ section {
     @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
       .background-image.banner-one {
         background-image: url(../images/banner-one/Image-Test_2000x2000_q8.jpg); } }
-  @media (min-width: 414px) {
-    .background-image.no-where {
-      background-image: url(../images/no-where-450x800.jpg); } }
-  @media (min-width: 736px) {
-    .background-image.no-where {
-      background-image: url(../images/no-where-800x450.jpg); } }
 
 /*@media (device-aspect-ratio: 10/16) {
     background-size: inherit;

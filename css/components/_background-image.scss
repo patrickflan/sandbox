@@ -51,14 +51,6 @@
             background-image: url(../images/banner-one/Image-Test_2000x2000_q8.jpg);
         }
     }
-    &.no-where {
-        @media (min-width: 414px) {
-            background-image: url(../images/no-where-450x800.jpg);
-        }
-        @media (min-width: 736px) {
-            background-image: url(../images/no-where-800x450.jpg);
-        }
-    }
 }
 
 
