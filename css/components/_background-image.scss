@@ -1,0 +1,105 @@
+﻿.background-image {
+    background-repeat: no-repeat;
+    &.size-cover {
+        background-size: cover;
+    }
+    &.x-center {
+        background-position-x: center;
+    }
+    &.y-center {
+        background-position-y: center;
+    }
+    &.y-top {
+        background-position-y: top;
+    }
+    &.fixed {
+        background-attachment: fixed;
+    }
+    &.bokeh {
+        width: 100%;
+        min-height: 100vh;
+        // ratio mobile
+        @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
+            background-image: url(../images/bokeh/BF-Bokeh_1492x1492.jpg);
+        }
+        
+        // ratio 16/10 - Samsung/Google Nexus 10
+        @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
+            background-image: url(../images/bokeh/BF-Bokeh_2000x2000.jpg);
+        }
+
+        // ratio 3/4 - iPad
+        @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
+            background-image: url(../images/bokeh/BF-Bokeh_2000x2000.jpg);
+        }
+    }
+    &.banner-one {
+        width: 100%;
+        min-height: 100vh;
+        // ratio mobile
+        @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
+            background-image: url(../images/banner-one/Image-Test_1492x1492_q8.jpg);
+        }
+        
+        // ratio 16/10 - Samsung/Google Nexus 10
+        @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
+            background-image: url(../images/banner-one/Image-Test_2000x2000_q8.jpg);
+        }
+
+        // ratio 3/4 - iPad
+        @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
+            background-image: url(../images/banner-one/Image-Test_2000x2000_q8.jpg);
+        }
+    }
+    &.no-where {
+        @media (min-width: 414px) {
+            background-image: url(../images/no-where-450x800.jpg);
+        }
+        @media (min-width: 736px) {
+            background-image: url(../images/no-where-800x450.jpg);
+        }
+    }
+}
+
+
+/*@media (device-aspect-ratio: 10/16) {
+    background-size: inherit;
+}
+@media (min-device-height: 600px) and (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
+    min-height: 600px;
+}
+@media (min-device-height: 800px) and (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
+    min-height: 800px;
+}*/
+
+/*@media (min-device-height: 760px) and (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
+    min-height: 600px;
+}
+@media (min-device-height: 1024px) and (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
+    min-height: 800px;
+}*/
+/*@media (min-width: 800px) {
+    background-image: url(../images/Image-Test_Galaxy-Pro_1280x800_25q.jpg);
+}*/
+
+/*@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px) {
+    min-height: 568px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 375px) {
+    min-height: 627px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 414px) {
+    min-height: 746px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 480px) {
+    min-height: 320px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 568px) {
+    min-height: 320px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 667px) {
+    min-height: 375px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 736px) {
+    min-height: 414px;
+}*/

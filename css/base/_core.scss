@@ -1,0 +1,89 @@
+﻿
+html {
+    font-size: $base-size;   // 1rem = 16px
+    font-family: Arial, sans-serif;
+    line-height: 1.25rem;
+    color: $color-dark-gray;
+    @media screen and (min-width: 500px) {
+        font-size: 14px;
+    }
+    @media screen and (min-width: 570px) {
+        font-size: 15px;
+    }
+    @media screen and (min-width: 620px) {
+        font-size: 16px;
+    }
+    @media screen and (min-width: 680px) {
+        font-size: 17px;
+    }
+    @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+        font-size: 18px;
+        line-height: 2rem;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+.heading {
+    font-family: $font-family-sans-serif;
+    line-height: 1.65rem;
+}
+
+h1 {
+  font-size: 2rem;
+   @extend .heading;
+   &:first-child {
+      @extend .margin-top-none;
+      @extend .margin-bottom-none;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  @extend .heading;
+  &:first-child {
+      @extend .margin-top-none;
+      @extend .margin-bottom-none;
+  }
+}
+
+h3 {
+  @extend .heading;
+  &:first-child {
+      @extend .margin-top-none;
+      @extend .margin-bottom-none;
+  }
+}
+
+h4 {
+  @extend .heading;
+}
+
+p {
+  font-size: 1rem;
+  &:first-child {
+      margin-top: 0;
+  }
+  &:last-child {
+      @extend .margin-bottom-none;
+  }
+}
+
+ul {
+    &:last-child {
+        @extend .margin-bottom-none; 
+    }
+}
+
+a {
+    color: $color-link;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+img {
+    max-width: 100%;
+}
