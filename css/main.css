@@ -1,4 +1,40 @@
-﻿html {
+﻿/*@mixin bp-large {
+  @media only screen and (max-width: 60em) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media only screen and (max-width: 40em) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media only screen and (max-width: 30em) {
+    @content;
+  }
+}
+
+.sidebar {
+  width: 60%;
+  float: left;
+  margin: 0 2% 0 0;
+  @include bp-small {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+}
+
+.topbar {
+    @include bp-small {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+}*/
+html {
   font-size: 16px;
   font-family: Arial, sans-serif;
   line-height: 1.25rem;
@@ -25,18 +61,20 @@ body {
 
 .heading, h1, h2, h3, h4 {
   font-family: "Ubuntu", sans-serif;
-  line-height: 1.65rem; }
+  margin: 0; }
 
 h1 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  line-height: 2rem; }
 
 h2 {
   font-size: 1.5rem; }
 
 p {
-  font-size: 1rem; }
-  p:first-child {
-    margin-top: 0; }
+  font-size: .75rem; }
+
+ul {
+  font-size: .75rem; }
 
 a {
   color: #408CCC; }
@@ -47,20 +85,27 @@ img {
   max-width: 100%; }
 
 section {
-  padding: 0;
-  position: relative;
-  display: flexbox;
-  min-width: calc(100vw - 40px);
-  min-height: calc(100vh - 40px);
-  background: #F0F0F0;
-  box-sizing: border-box;
-  padding: 20px;
-  background: #F0F0F0;
-  margin: 20px;
+  padding: 5rem;
   align-items: center; }
   section > p {
     margin-top: 0; }
 
+/*section {
+    padding: 0;
+    position: relative;
+    display: flexbox;
+    min-width: calc(100vw - 40px);
+    min-height: calc(100vh - 40px);
+    background: $color-medium-lite;
+    box-sizing: border-box;
+    padding: 20px;
+    background: $color-medium-lite;
+    margin: 20px;
+    align-items: center;
+    > p {
+        margin-top: 0;
+    }
+}*/
 .color-invert {
   color: #fff; }
 
@@ -69,11 +114,83 @@ section {
   padding: 20px 0;
   text-align: center; }
 
-.margin-top-none, h1:first-child, h2:first-child, h3:first-child {
+.margin-top-none {
   margin-top: 0; }
 
-.margin-bottom-none, h1:first-child, h2:first-child, h3:first-child, p:last-child, ul:last-child {
+.margin-bottom-none, ul:last-child {
   margin-bottom: 0; }
+
+.margin-xsm-top {
+  margin-top: 0.5rem; }
+
+.margin-xsm-right {
+  margin-right: 0.5rem; }
+
+.margin-xsm-bottom {
+  margin-bottom: 0.5rem; }
+
+.margin-xsm-left {
+  margin-left: 0.5rem; }
+
+.margin-sm-top {
+  margin-top: 0.75rem; }
+
+.margin-sm-right {
+  margin-right: 0.75rem; }
+
+.margin-sm-bottom {
+  margin-bottom: 0.75rem; }
+
+.margin-sm-left {
+  margin-left: 0.75rem; }
+
+.margin-md-top {
+  margin-top: 1rem; }
+
+.margin-md-right {
+  margin-right: 1rem; }
+
+.margin-md-bottom {
+  margin-bottom: 1rem; }
+
+.margin-md-left {
+  margin-left: 1rem; }
+
+.margin-lg-top {
+  margin-top: 1.5rem; }
+
+.margin-lg-right {
+  margin-right: 1.5rem; }
+
+.margin-lg-bottom {
+  margin-bottom: 1.5rem; }
+
+.margin-lg-left {
+  margin-left: 1.5rem; }
+
+.margin-xlg-top {
+  margin-top: 2rem; }
+
+.margin-xlg-right {
+  margin-right: 2rem; }
+
+.margin-xlg-bottom {
+  margin-bottom: 2rem; }
+
+.margin-xlg-left {
+  margin-left: 2rem; }
+
+.margin-xxlg-top {
+  margin-top: 3rem; }
+
+.margin-xxlg-right {
+  margin-right: 3rem; }
+
+.margin-xxlg-bottom {
+  margin-bottom: 3rem; }
+
+.margin-xxlg-left {
+  margin-left: 3rem; }
 
 .background-image {
   background-repeat: no-repeat; }
@@ -87,6 +204,15 @@ section {
     background-position-y: top; }
   .background-image.fixed {
     background-attachment: fixed; }
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
+    .background-image.aurora-borealis {
+      background-image: url(../images/aurora-borealis/aurora-borealis.jpeg); } }
+  @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
+    .background-image.aurora-borealis {
+      background-image: url(../images/aurora-borealis/aurora-borealis.jpeg); } }
+  @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
+    .background-image.aurora-borealis {
+      background-image: url(../images/aurora-borealis/aurora-borealis.jpeg); } }
   @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
     .background-image.bokeh {
       background-image: url(../images/bokeh/BF-Bokeh_1492x1492.jpg); } }

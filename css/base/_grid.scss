@@ -1,4 +1,13 @@
 ﻿section {
+    padding: 5rem;
+    align-items: center;
+    > p {
+        margin-top: 0;
+    }
+}
+
+
+/*section {
     padding: 0;
     position: relative;
     display: flexbox;
@@ -13,4 +22,4 @@
     > p {
         margin-top: 0;
     }
-}
+}*/

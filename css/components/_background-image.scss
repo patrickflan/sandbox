@@ -15,6 +15,22 @@
     &.fixed {
         background-attachment: fixed;
     }
+    &.aurora-borealis {
+        // ratio mobile
+        @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
+            background-image: url(../images/aurora-borealis/aurora-borealis.jpeg);
+        }
+        
+        // ratio 16/10 - Samsung/Google Nexus 10
+        @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
+            background-image: url(../images/aurora-borealis/aurora-borealis.jpeg);
+        }
+
+        // ratio 3/4 - iPad
+        @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
+            background-image: url(../images/aurora-borealis/aurora-borealis.jpeg);
+        }
+    }
     &.bokeh {
         // ratio mobile
         @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {

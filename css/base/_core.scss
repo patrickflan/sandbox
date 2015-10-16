@@ -28,33 +28,22 @@ body {
 
 .heading {
     font-family: $font-family-sans-serif;
-    line-height: 1.65rem;
+    margin: 0;
 }
 
 h1 {
   font-size: 2rem;
+  line-height: 2rem;
    @extend .heading;
-   &:first-child {
-      @extend .margin-top-none;
-      @extend .margin-bottom-none;
-  }
 }
 
 h2 {
   font-size: 1.5rem;
   @extend .heading;
-  &:first-child {
-      @extend .margin-top-none;
-      @extend .margin-bottom-none;
-  }
 }
 
 h3 {
   @extend .heading;
-  &:first-child {
-      @extend .margin-top-none;
-      @extend .margin-bottom-none;
-  }
 }
 
 h4 {
@@ -62,16 +51,11 @@ h4 {
 }
 
 p {
-  font-size: 1rem;
-  &:first-child {
-      margin-top: 0;
-  }
-  &:last-child {
-      @extend .margin-bottom-none;
-  }
+  font-size: .75rem;
 }
 
 ul {
+    font-size: .75rem;
     &:last-child {
         @extend .margin-bottom-none; 
     }
