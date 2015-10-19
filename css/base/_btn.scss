@@ -1,0 +1,10 @@
+﻿.btn {
+    background: $color-medium-lite;
+    display: inline-block;
+    padding: $xsm-spacing;
+    box-sizing: border-box;
+    text-decoration: none;
+    &.btn-block {
+        display: block;
+    }
+}

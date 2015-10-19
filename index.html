@@ -10,66 +10,88 @@
     <base target="_blank">
     <title>Patrick Flanagan - Front-end UI Developer</title>
     <link rel="stylesheet" href="css/main.min.css" />
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div class="off-canvas">
+        <a href="" class="off-canvas-trigger">
+            =
+        </a>
+        <nav class="site-nav">
+            <ul class="clear-styles">
+                <li><a href="" class="btn link-resume">Resume</a></li>
+                <li><a href="" class="btn link-prototypes">Prototypes</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="vh100 background-image size-cover x-center y-top fixed aurora-borealis">
+                <h1 class="color-invert margin-md-bottom">Patrick Flanagan</h1>
+                <h5 class="color-invert">Sr. User Interface Application Developer, Strategic Technology Solutions (STS) at HealthGrades</h5>
+            </section>
+            <section class="color-invert background-image size-cover x-center y-top fixed banner-one">
+                <h3 class="margin-md-bottom">Objective</h3>
+                <p>To continue growing as a front-end professional at company where creativity and innovation are encouraged.</p>
+            </section>
+            <section>
+                <h3 class="margin-md-bottom">Branding Statement</h3>
+                <p>A professional front-end UI developer with a persuasive and energetic personality, capacity and interest to continue learning. A team player who loves to grow artistically and has created award-winning designs which have brought world-wide recognition from peers.</p>
+            </section>
+            <section>
+                <h3 class="margin-md-bottom">Skills</h3>
+                <h4>Programming Languages/Patterns:</h4>
+                <ul>
+                    <li>Advanced - xHTML, .LESS, .SCSS</li>
+                    <li>Intermediate - JavaScript, jQuery, CSS3</li>
+                    <li>Some Knowledge - ActionScript, PHP, .NET, MVC4, AngularJS, ReactJS</li>
+                </ul>
+                <h4>Software/Tools:</h4>
+                <ul>
+                    <li>Advanced - Adobe Photoshop®, Adobe Dreamweaver®, Visual Studio 2013®, Visual Studio 2015®, Team Foundation Server(TFS), IcoMoon, Bootstrap</li>
+                    <li>Intermediate - Adobe Illustrator®, Adobe Flash®, Adobe Premiere®</li>
+                    <li>Some Knowledge - Adobe Contribute®, Adobe After Effects®, NPM, Node.JS</li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="margin-md-bottom">Work History</h3>
+                <h4>Healthgrades</h4>
+                <p>
+                    Title: Sr. User Interface Application Developer, Strategic Technology Solutions (STS)<br />
+                    Location: Greater Denver Area<br />
+                    Time Period: Sept. 2010 - Present
+                </p>
 
-    <section class="vh100 background-image size-cover x-center y-top fixed aurora-borealis">
-        <h1 class="color-invert margin-md-bottom">Patrick Flanagan</h1>
-        <h5 class="color-invert">Sr. User Interface Application Developer, Strategic Technology Solutions (STS) at HealthGrades</h5>
-    </section>
-    <section class="color-invert background-image size-cover x-center y-top fixed banner-one">
-        <h3 class="margin-md-bottom">Objective</h3>
-        <p>To continue growing as a front-end professional at company where creativity and innovation are encouraged.</p>
-    </section>
-    <section>
-        <h3 class="margin-md-bottom">Branding Statement</h3>
-        <p>A professional front-end UI developer with a persuasive and energetic personality, capacity and interest to continue learning. A team player who loves to grow artistically and has created award-winning designs which have brought world-wide recognition from peers.</p>
-    </section>
-    <section>
-        <h3 class="margin-md-bottom">Skills</h3>
-        <h4>Programming Languages/Patterns:</h4>
-        <ul>
-            <li>Advanced - xHTML, .LESS, .SCSS</li>
-            <li>Intermediate - JavaScript, jQuery, CSS3</li>
-            <li>Some Knowledge - ActionScript, PHP, .NET, MVC4, AngularJS, ReactJS</li>
-        </ul>
-        <h4>Software/Tools:</h4>
-        <ul>
-            <li>Advanced - Adobe Photoshop®, Adobe Dreamweaver®, Visual Studio 2013®, Visual Studio 2015®, Team Foundation Server(TFS), IcoMoon, Bootstrap</li>
-            <li>Intermediate - Adobe Illustrator®, Adobe Flash®, Adobe Premiere®</li>
-            <li>Some Knowledge - Adobe Contribute®, Adobe After Effects®, NPM, Node.JS</li>
-        </ul>
-    </section>
-    <section>
-        <h3 class="margin-md-bottom">Work History</h3>
-        <h4>Healthgrades</h4>
-        <p>
-            Title: Sr. User Interface Application Developer, Strategic Technology Solutions (STS)<br />
-            Location: Greater Denver Area<br />
-            Time Period: Sept. 2010 - Present
-        </p>
+                <h4>Crocs</h4>
+                <p>
+                    Title: UI Developer<br />
+                    Location: Niwot, CO<br />
+                    Time Period: 2009 - 2010
+                </p>
 
-        <h4>Crocs</h4>
-        <p>
-            Title: UI Developer<br />
-            Location: Niwot, CO<br />
-            Time Period: 2009 - 2010
-        </p>
+                <h4>Page 1 Solutions</h4>
+                <p>
+                    Title: Sr. Graphic Designer / Front-end Developer<br />
+                    Location: Golden, CO<br />
+                    Time Period: April 2006 - October 2009
+                </p>
+            </section>
+        </main>
+    </div>
+    
 
-        <h4>Page 1 Solutions</h4>
-        <p>
-            Title: Sr. Graphic Designer / Front-end Developer<br />
-            Location: Golden, CO<br />
-            Time Period: April 2006 - October 2009
-        </p>
-    </section>
-
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript">
         WebFontConfig = {
             google: { families: ['Droid+Sans::latin'] }
         };
         (function () {
+
+            $('.off-canvas-trigger').on('click', function (event) {
+                event.preventDefault();
+                $that = $(this);
+                $that.closest('.off-canvas').toggleClass('open');
+            });
+
             var wf = document.createElement('script');
             wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
               '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';

@@ -1,0 +1,27 @@
+﻿.site-nav {
+    .btn {
+        margin-right: 5px;
+        &.link-resume {
+            border-left: solid 3px $color-link;
+        }
+        &.link-prototypes {
+            border-left: solid 3px $color-primary;
+        }
+    }
+    @media screen and (max-width: 760px) {
+        li {
+            display: block;
+            width: 100%;
+            border-bottom: solid 1px transparent;
+        }
+        .btn {
+            width: 100%;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        li {
+            display: table-cell;
+            width: initial;
+        }
+    }
+}

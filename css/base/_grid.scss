@@ -1,12 +1,18 @@
 ﻿@import '_variables.scss';
 
+.off-canvas-trigger {
+    display: none;
+}
+
 section {
     padding: $xlg-spacing;
+    width: 100%;
+    box-sizing: border-box;
     > p {
         margin-top: 0;
     }
     &.vh100 {
-        height: calc(100vh - #{$xlg-spacing} * 2);
+        //height: calc(100vh - #{$xlg-spacing} * 2);
     }
 
 }

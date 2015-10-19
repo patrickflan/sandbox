@@ -8,12 +8,26 @@
     text-align: center;
 }
 
+ul {
+    &.clear-styles {
+        &, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    }
+}
+
 .margin-top-none {
     margin-top: 0;
 }
 
 .margin-bottom-none {
     margin-bottom: 0;
+}
+
+.margin-no {
+    margin: 0;
 }
 
 

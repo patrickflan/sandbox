@@ -44,7 +44,8 @@ html {
       line-height: 1.25; } }
 
 body {
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
 
 .heading, h1, h2, h3, h4 {
   margin: 0; }
@@ -66,12 +67,24 @@ a {
 img {
   max-width: 100%; }
 
+.btn {
+  background: #F0F0F0;
+  display: inline-block;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  text-decoration: none; }
+  .btn.btn-block {
+    display: block; }
+
+.off-canvas-trigger {
+  display: none; }
+
 section {
-  padding: 2rem; }
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box; }
   section > p {
     margin-top: 0; }
-  section.vh100 {
-    height: calc(100vh - 2rem * 2); }
 
 /*section {
     padding: 0;
@@ -97,11 +110,19 @@ section {
   padding: 20px 0;
   text-align: center; }
 
+ul.clear-styles, ul.clear-styles li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
 .margin-top-none {
   margin-top: 0; }
 
 .margin-bottom-none, ul:last-child {
   margin-bottom: 0; }
+
+.margin-no {
+  margin: 0; }
 
 .margin-xsm-top {
   margin-top: 0.5rem; }
@@ -174,6 +195,54 @@ section {
 
 .margin-xxlg-left {
   margin-left: 3rem; }
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .off-canvas {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+    transition: transform 500ms ease; }
+    .off-canvas .off-canvas-trigger {
+      position: absolute;
+      display: inline-block;
+      left: 0;
+      top: 0;
+      padding: 0.5rem 1rem 0.5rem 0.5rem;
+      border-radius: 0 3rem 3rem 0;
+      background: white;
+      text-decoration: none;
+      opacity: .75; }
+    .off-canvas .site-nav {
+      position: absolute;
+      height: 100%;
+      left: -50%;
+      width: 50%;
+      top: 0; }
+    .off-canvas.open {
+      transform: translate3d(50%, 0, 0);
+      transition: transform 500ms ease; }
+      .off-canvas.open .off-canvas-trigger {
+        opacity: 1;
+        transition: opacity 400ms ease-in; } }
+
+.site-nav .btn {
+  margin-right: 5px; }
+  .site-nav .btn.link-resume {
+    border-left: solid 3px #408CCC; }
+  .site-nav .btn.link-prototypes {
+    border-left: solid 3px #FF6F69; }
+
+@media screen and (max-width: 760px) {
+  .site-nav li {
+    display: block;
+    width: 100%;
+    border-bottom: solid 1px transparent; }
+  .site-nav .btn {
+    width: 100%; } }
+
+@media screen and (min-width: 768px) {
+  .site-nav li {
+    display: table-cell;
+    width: initial; } }
 
 .background-image {
   background-repeat: no-repeat; }
