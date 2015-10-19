@@ -1,0 +1,51 @@
+﻿// Base Styles
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_core.scss';
+
+// Prototype
+body {
+    background: #dcf2f9;
+}
+.header-sticky {
+    height: 40px;
+    padding: 20px 0 0 10px;
+    background: #fff;
+    box-shadow: 0 2px 2px 1px rgba(0,0,0,.15);
+}
+
+.header-ad {
+    text-align: center;
+    div {
+        margin: 0 auto;
+        // mobile
+        @media (min-width: 320px) {
+            width: 320px;
+            height: 35px;
+            padding: 15px 0 0;
+            background: red;
+        }
+        // tablet+
+        @media (min-width: 768px) {
+            width: 728px;
+            height: 55px;
+            padding: 35px 0 0;
+            background: pink;
+        }
+
+    }
+
+}
+
+.carousel {
+    // mobile
+    @media (min-width: 320px) {
+        height: calc(100vh - 110px);
+        background: black;
+    }
+    // tablet+
+    @media (min-width: 768px) {
+        height: calc(100vh - 150px);
+        background: green;
+    }
+}
