@@ -1,24 +1,24 @@
 ﻿
 html {
     font-size: $base-size;   // 1rem = 16px
-    font-family: Arial, sans-serif;
-    line-height: 1.25rem;
+    font-family: 'Droid Sans', sans-serif;
     color: $color-dark-gray;
-    @media screen and (min-width: 500px) {
-        font-size: 14px;
+    @media screen and (min-width: 300px) {
+        font-size: 18px;
+        line-height: 1.25;
     }
     @media screen and (min-width: 570px) {
-        font-size: 15px;
+        //font-size: 15px;
     }
     @media screen and (min-width: 620px) {
-        font-size: 16px;
+        // font-size: 32px;
+        // line-height: 36px;
     }
     @media screen and (min-width: 680px) {
-        font-size: 17px;
+        //font-size: 22px;
     }
     @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
-        font-size: 32px;
-        line-height: 2.2rem;
+        //font-size: 16px;
     }
 }
 
@@ -27,35 +27,35 @@ body {
 }
 
 .heading {
-    font-family: $font-family-sans-serif;
     margin: 0;
 }
 
 h1 {
-  font-size: 2rem;
-  line-height: 2rem;
-   @extend .heading;
+    @extend .heading;
+    font-size: 2.75rem;
 }
 
 h2 {
-  font-size: 1.5rem;
-  @extend .heading;
+    @extend .heading;
 }
 
 h3 {
-  @extend .heading;
+    @extend .heading;
 }
 
 h4 {
-  @extend .heading;
+    @extend .heading;
 }
 
-p {
+/*p {
   font-size: .75rem;
-}
+}*/
 
 ul {
-    font-size: .75rem;
+    //font-size: .75rem;
+    li {
+        margin-bottom: $md-spacing;
+    }
     &:last-child {
         @extend .margin-bottom-none; 
     }

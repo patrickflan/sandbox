@@ -1,9 +1,14 @@
-﻿section {
-    padding: 5rem;
-    align-items: center;
+﻿@import '_variables.scss';
+
+section {
+    padding: $xlg-spacing;
     > p {
         margin-top: 0;
     }
+    &.vh100 {
+        height: calc(100vh - #{$xlg-spacing} * 2);
+    }
+
 }
 
 

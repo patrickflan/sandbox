@@ -36,45 +36,27 @@
 }*/
 html {
   font-size: 16px;
-  font-family: Arial, sans-serif;
-  line-height: 1.25rem;
+  font-family: 'Droid Sans', sans-serif;
   color: #484848; }
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 300px) {
     html {
-      font-size: 14px; } }
-  @media screen and (min-width: 570px) {
-    html {
-      font-size: 15px; } }
-  @media screen and (min-width: 620px) {
-    html {
-      font-size: 16px; } }
-  @media screen and (min-width: 680px) {
-    html {
-      font-size: 17px; } }
-  @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
-    html {
-      font-size: 32px;
-      line-height: 2.2rem; } }
+      font-size: 18px;
+      line-height: 1.25; } }
 
 body {
   margin: 0; }
 
 .heading, h1, h2, h3, h4 {
-  font-family: "Ubuntu", sans-serif;
   margin: 0; }
 
 h1 {
-  font-size: 2rem;
-  line-height: 2rem; }
+  font-size: 2.75rem; }
 
-h2 {
-  font-size: 1.5rem; }
-
-p {
-  font-size: .75rem; }
-
-ul {
-  font-size: .75rem; }
+/*p {
+  font-size: .75rem;
+}*/
+ul li {
+  margin-bottom: 1rem; }
 
 a {
   color: #408CCC; }
@@ -85,10 +67,11 @@ img {
   max-width: 100%; }
 
 section {
-  padding: 5rem;
-  align-items: center; }
+  padding: 2rem; }
   section > p {
     margin-top: 0; }
+  section.vh100 {
+    height: calc(100vh - 2rem * 2); }
 
 /*section {
     padding: 0;
