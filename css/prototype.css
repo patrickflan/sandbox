@@ -171,8 +171,9 @@ ul.clear-styles, ul.clear-styles li {
     background-position-y: center; }
   .background-image.y-top {
     background-position-y: top; }
-  .background-image.fixed {
-    background-attachment: fixed; }
+  @media screen and (min-width: 768px) {
+    .background-image.fixed {
+      background-attachment: fixed; } }
   @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
     .background-image.aurora-borealis {
       background-image: url(../images/aurora-borealis/aurora-borealis.jpeg); } }

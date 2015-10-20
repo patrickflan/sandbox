@@ -13,7 +13,9 @@
         background-position-y: top;
     }
     &.fixed {
-        background-attachment: fixed;
+        @media screen and (min-width: 768px) {
+            background-attachment: fixed;
+        }
     }
     &.aurora-borealis {
         // ratio mobile

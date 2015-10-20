@@ -6,13 +6,29 @@ section {
     padding: $xlg-spacing;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
     > p {
         margin-top: 0;
+    }
+    &.vh75 {
+        height: 75vh;
+    }
+    &.vh50 {
+        height: 50vh;
     }
     &.vh100 {
         //height: calc(100vh - #{$xlg-spacing} * 2);
     }
 
+}
+
+.hero {
+    position: absolute;
+    width: 578px;
+    left: 50%;
+    margin-left: -284px;
+    text-align: center;
+    top: 15%;
 }
 
 

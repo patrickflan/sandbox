@@ -1,5 +1,5 @@
 ﻿.site-nav {
-    position: relative;
+    
     .btn {
         margin-right: 5px;
         &:before {
@@ -43,8 +43,14 @@
     }
 
     @media screen and (min-width: 768px) {
-        padding: 20px 0;
+        padding: 20px 240px;
         text-align: center;
-
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-sizing: border-box;
+        z-index: 2;
     }
 }

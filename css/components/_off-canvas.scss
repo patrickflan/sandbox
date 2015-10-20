@@ -1,22 +1,25 @@
 ﻿.off-canvas-trigger {
     display: none;
 }
-
-@media screen and (min-width: 250px) and (max-width: 768px) {
-    .off-canvas {
+.off-canvas {
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+        padding-top: 50px;
         position: relative;
         transform: translate3d(0, 0, 0);
         transition: transform 500ms ease;
         .off-canvas-trigger {
             position: absolute;
-            display: inline-block;
+            display: table-cell;
             left: 0;
             top: 0;
-            padding: .5rem 1rem .5rem .5rem;
-            border-radius: 0 3rem 3rem 0;
-            background: white;
             text-decoration:none;
-            opacity: .75;
+            padding: 13px;
+            background: $color-dark-gray;
+            color: $color-medium-lite;
+            height: 50px;
+            width: 50px;
+            box-sizing:border-box;
+            vertical-align: middle;
         }
         .site-nav {
             position: absolute;
@@ -31,7 +34,12 @@
             .off-canvas-trigger {
                 opacity: 1;
                 transition: opacity 400ms ease-in;
+                background: $color-primary;
             }
         }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 80px;
     }
 }
