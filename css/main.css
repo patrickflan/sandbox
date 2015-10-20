@@ -72,7 +72,8 @@ img {
   display: inline-block;
   padding: 0.5rem;
   box-sizing: border-box;
-  text-decoration: none; }
+  text-decoration: none;
+  border-radius: .2rem; }
   .btn.btn-block {
     display: block; }
 
@@ -243,7 +244,7 @@ ul.clear-styles, ul.clear-styles li {
   position: relative; }
   .site-nav .btn {
     margin-right: 5px; }
-    .site-nav .btn.link-resume:before {
+    .site-nav .btn:before {
       content: '';
       display: block;
       height: 5px;
@@ -251,26 +252,22 @@ ul.clear-styles, ul.clear-styles li {
       position: absolute;
       left: 50%;
       top: 0;
+      opacity: 0;
       transition: all 300ms ease-in;
-      /*background:-webkit-gradient(linear, right top, background-image: -webkit-gradient(
-	                linear,
-	                right top,
-	                left top,
-	                color-stop(0, #FF6E69),
-	                color-stop(1, #A16D87)
-                );*/
-      background-image: -o-linear-gradient(left, #FF6E69 0%, #A16D87 100%);
-      background-image: -moz-linear-gradient(left, #FF6E69 0%, #A16D87 100%);
-      background-image: -webkit-linear-gradient(left, #FF6E69 0%, #A16D87 100%);
-      background-image: -ms-linear-gradient(left, #FF6E69 0%, #A16D87 100%);
-      background-image: linear-gradient(to left, #FF6E69 0%, #A16D87 100%); }
-    .site-nav .btn.link-resume:hover:before {
-      background: #408CCC;
+      background-image: -o-linear-gradient(left, #FF6E69 0%, #FFFFFF 0%, #FF8F89 50%, #FF8F89 50%, #FFFFFF 100%);
+      background-image: -moz-linear-gradient(left, #FF6E69 0%, #FFFFFF 0%, #FF8F89 50%, #FF8F89 50%, #FFFFFF 100%);
+      background-image: -webkit-linear-gradient(left, #FF6E69 0%, #FFFFFF 0%, #FF8F89 50%, #FF8F89 50%, #FFFFFF 100%);
+      background-image: -ms-linear-gradient(left, #FF6E69 0%, #FFFFFF 0%, #FF8F89 50%, #FF8F89 50%, #FFFFFF 100%);
+      background-image: linear-gradient(to left, #FF6E69 0%, #FFFFFF 0%, #FF8F89 50%, #FF8F89 50%, #FFFFFF 100%); }
+    .site-nav .btn:hover:before {
       transition: all 300ms ease-in;
       width: 100%;
-      left: 0; }
-    .site-nav .btn.link-prototypes {
-      border-bottom: solid 3px #FF6F69; }
+      left: 0;
+      opacity: 1; }
+    .site-nav .btn.link-resume:hover:before {
+      background: #408CCC; }
+    .site-nav .btn.link-prototypes:hover:before {
+      background: #96CEB4; }
   @media screen and (max-width: 760px) {
     .site-nav .btn {
       width: 100%; } }

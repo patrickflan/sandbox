@@ -2,39 +2,38 @@
     position: relative;
     .btn {
         margin-right: 5px;
+        &:before {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 0;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            opacity: 0;
+            transition: all 300ms ease-in;
+            background-image: -o-linear-gradient(left, #FF6E69 0%, #FFFFFF 0%, #FF8F89 50%, #FF8F89 50%, #FFFFFF 100%);
+            background-image: -moz-linear-gradient(left, #FF6E69 0%, #FFFFFF 0%, #FF8F89 50%, #FF8F89 50%, #FFFFFF 100%);
+            background-image: -webkit-linear-gradient(left, #FF6E69 0%, #FFFFFF 0%, #FF8F89 50%, #FF8F89 50%, #FFFFFF 100%);
+            background-image: -ms-linear-gradient(left, #FF6E69 0%, #FFFFFF 0%, #FF8F89 50%, #FF8F89 50%, #FFFFFF 100%);
+            background-image: linear-gradient(to left, #FF6E69 0%, #FFFFFF 0%, #FF8F89 50%, #FF8F89 50%, #FFFFFF 100%);
+        }
+        &:hover:before {
+            transition: all 300ms ease-in;
+            width: 100%;
+            left: 0;
+            opacity: 1;
+        }
+        
         &.link-resume {
-            
-            &:before {
-                content: '';
-                display: block;
-                height: 5px;
-                width: 0;
-                position: absolute;
-                left: 50%;
-                top: 0;
-                transition: all 300ms ease-in;
-                /*background:-webkit-gradient(linear, right top, background-image: -webkit-gradient(
-	                linear,
-	                right top,
-	                left top,
-	                color-stop(0, #FF6E69),
-	                color-stop(1, #A16D87)
-                );*/
-                background-image: -o-linear-gradient(left, #FF6E69 0%, #A16D87 100%);
-                background-image: -moz-linear-gradient(left, #FF6E69 0%, #A16D87 100%);
-                background-image: -webkit-linear-gradient(left, #FF6E69 0%, #A16D87 100%);
-                background-image: -ms-linear-gradient(left, #FF6E69 0%, #A16D87 100%);
-                background-image: linear-gradient(to left, #FF6E69 0%, #A16D87 100%);
-            }
             &:hover:before {
                 background: $color-link;
-                transition: all 300ms ease-in;
-                width: 100%;
-                left: 0;
             }
         }
         &.link-prototypes {
-            border-bottom: solid 3px $color-primary;
+            &:hover:before {
+                background: $color-tertiary;
+            }
         }
     }
     @media screen and (max-width: 760px) {
