@@ -67,39 +67,224 @@ a {
 img {
   max-width: 100%; }
 
+.color-invert {
+  color: #fff; }
+
+.image-testing-header {
+  margin: 20px;
+  padding: 20px 0;
+  text-align: center; }
+
+ul.clear-styles, ul.clear-styles li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.margin-top-none {
+  margin-top: 0; }
+
+.margin-bottom-none, ul:last-child {
+  margin-bottom: 0; }
+
+.margin-no {
+  margin: 0; }
+
+.margin-xsm-top {
+  margin-top: 0.5rem; }
+
+.margin-xsm-right {
+  margin-right: 0.5rem; }
+
+.margin-xsm-bottom {
+  margin-bottom: 0.5rem; }
+
+.margin-xsm-left {
+  margin-left: 0.5rem; }
+
+.margin-sm-top {
+  margin-top: 0.75rem; }
+
+.margin-sm-right {
+  margin-right: 0.75rem; }
+
+.margin-sm-bottom {
+  margin-bottom: 0.75rem; }
+
+.margin-sm-left {
+  margin-left: 0.75rem; }
+
+.margin-md-top {
+  margin-top: 1rem; }
+
+.margin-md-right {
+  margin-right: 1rem; }
+
+.margin-md-bottom {
+  margin-bottom: 1rem; }
+
+.margin-md-left {
+  margin-left: 1rem; }
+
+.margin-lg-top {
+  margin-top: 1.5rem; }
+
+.margin-lg-right {
+  margin-right: 1.5rem; }
+
+.margin-lg-bottom {
+  margin-bottom: 1.5rem; }
+
+.margin-lg-left {
+  margin-left: 1.5rem; }
+
+.margin-xlg-top {
+  margin-top: 2rem; }
+
+.margin-xlg-right {
+  margin-right: 2rem; }
+
+.margin-xlg-bottom {
+  margin-bottom: 2rem; }
+
+.margin-xlg-left {
+  margin-left: 2rem; }
+
+.margin-xxlg-top {
+  margin-top: 3rem; }
+
+.margin-xxlg-right {
+  margin-right: 3rem; }
+
+.margin-xxlg-bottom {
+  margin-bottom: 3rem; }
+
+.margin-xxlg-left {
+  margin-left: 3rem; }
+
+.background-image {
+  background-repeat: no-repeat; }
+  .background-image.size-cover {
+    background-size: cover; }
+  .background-image.x-center {
+    background-position-x: center; }
+  .background-image.y-center {
+    background-position-y: center; }
+  .background-image.y-top {
+    background-position-y: top; }
+  .background-image.fixed {
+    background-attachment: fixed; }
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
+    .background-image.aurora-borealis {
+      background-image: url(../images/aurora-borealis/aurora-borealis.jpeg); } }
+  @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
+    .background-image.aurora-borealis {
+      background-image: url(../images/aurora-borealis/aurora-borealis.jpeg); } }
+  @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
+    .background-image.aurora-borealis {
+      background-image: url(../images/aurora-borealis/aurora-borealis.jpeg); } }
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
+    .background-image.bokeh {
+      background-image: url(../images/bokeh/BF-Bokeh_1492x1492.jpg); } }
+  @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
+    .background-image.bokeh {
+      background-image: url(../images/bokeh/BF-Bokeh_2000x2000.jpg); } }
+  @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
+    .background-image.bokeh {
+      background-image: url(../images/bokeh/BF-Bokeh_2000x2000.jpg); } }
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
+    .background-image.banner-one {
+      background-image: url(../images/banner-one/Image-Test_1492x1492_q8.jpg); } }
+  @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
+    .background-image.banner-one {
+      background-image: url(../images/banner-one/Image-Test_2000x2000_q8.jpg); } }
+  @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
+    .background-image.banner-one {
+      background-image: url(../images/banner-one/Image-Test_2000x2000_q8.jpg); } }
+
+/*@media (device-aspect-ratio: 10/16) {
+    background-size: inherit;
+}
+@media (min-device-height: 600px) and (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
+    min-height: 600px;
+}
+@media (min-device-height: 800px) and (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
+    min-height: 800px;
+}*/
+/*@media (min-device-height: 760px) and (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
+    min-height: 600px;
+}
+@media (min-device-height: 1024px) and (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
+    min-height: 800px;
+}*/
+/*@media (min-width: 800px) {
+    background-image: url(../images/Image-Test_Galaxy-Pro_1280x800_25q.jpg);
+}*/
+/*@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px) {
+    min-height: 568px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 375px) {
+    min-height: 627px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 414px) {
+    min-height: 746px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 480px) {
+    min-height: 320px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 568px) {
+    min-height: 320px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 667px) {
+    min-height: 375px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 736px) {
+    min-height: 414px;
+}*/
 body {
-  background: #dcf2f9; }
+  background: #dcf2f9;
+  padding-top: 60px; }
+
+.border-box, .header-sticky, .carousel, footer {
+  box-sizing: border-box; }
 
 .header-sticky {
-  height: 40px;
+  width: 100%;
+  height: 60px;
+  top: 0;
   padding: 20px 0 0 10px;
   background: #fff;
-  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  z-index: 1; }
 
 .header-ad {
   text-align: center; }
   .header-ad div {
-    margin: 0 auto; }
+    margin: 0 auto;
+    background: #FF6F69; }
     @media (min-width: 320px) {
       .header-ad div {
         width: 320px;
         height: 35px;
-        padding: 15px 0 0;
-        background: red; } }
+        padding: 15px 0 0; } }
     @media (min-width: 768px) {
       .header-ad div {
         width: 728px;
         height: 55px;
-        padding: 35px 0 0;
-        background: pink; } }
+        padding: 35px 0 0; } }
 
-@media (min-width: 320px) {
-  .carousel {
-    height: calc(100vh - 110px);
-    background: black; } }
+.carousel {
+  background: #F0F0F0;
+  padding: 10px;
+  text-align: center; }
+  @media (min-width: 320px) {
+    .carousel {
+      height: calc(100vh - 110px); } }
+  @media (min-width: 768px) {
+    .carousel {
+      height: calc(100vh - 150px); } }
 
-@media (min-width: 768px) {
-  .carousel {
-    height: calc(100vh - 150px);
-    background: green; } }
+footer {
+  background: #FFCC5C;
+  padding: 10px; }
 

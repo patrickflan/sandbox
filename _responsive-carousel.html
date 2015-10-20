@@ -18,22 +18,26 @@
     <div class="header-ad">
         <div>advertisement</div>
     </div>
-    <div class="carousel">
+    <div class="carousel background-image bokeh size-cover x-center y-center">
         carousel
     </div>
-    <nav>
-        <ul>
-            <li>Link</li>
-            <li>Link</li>
-        </ul>
-    </nav>
+    <footer>
+        <p class="margin-no">below viewport</p>
+    </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript">
         (function () {
 
-            console.log('Width: ' + $('.carousel').outerWidth() + ' Height: ' + $('.carousel').outerHeight());
+            var $carousel = $('.carousel');
             
+            var carouselObj = {
+                'width': $carousel.outerWidth(),
+                'height': $carousel.outerHeight()
+            };
+            
+            console.log(carouselObj);
         })();
     </script>
 </body>
+
 </html>
