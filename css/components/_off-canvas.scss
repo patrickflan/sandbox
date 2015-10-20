@@ -1,4 +1,8 @@
-﻿@media screen and (min-width: 300px) and (max-width: 768px) {
+﻿.off-canvas-trigger {
+    display: none;
+}
+
+@media screen and (min-width: 250px) and (max-width: 768px) {
     .off-canvas {
         position: relative;
         transform: translate3d(0, 0, 0);

@@ -1,27 +1,51 @@
 ﻿.site-nav {
+    position: relative;
     .btn {
         margin-right: 5px;
         &.link-resume {
-            border-left: solid 3px $color-link;
+            
+            &:before {
+                content: '';
+                display: block;
+                height: 5px;
+                width: 0;
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transition: all 300ms ease-in;
+                /*background:-webkit-gradient(linear, right top, background-image: -webkit-gradient(
+	                linear,
+	                right top,
+	                left top,
+	                color-stop(0, #FF6E69),
+	                color-stop(1, #A16D87)
+                );*/
+                background-image: -o-linear-gradient(left, #FF6E69 0%, #A16D87 100%);
+                background-image: -moz-linear-gradient(left, #FF6E69 0%, #A16D87 100%);
+                background-image: -webkit-linear-gradient(left, #FF6E69 0%, #A16D87 100%);
+                background-image: -ms-linear-gradient(left, #FF6E69 0%, #A16D87 100%);
+                background-image: linear-gradient(to left, #FF6E69 0%, #A16D87 100%);
+            }
+            &:hover:before {
+                background: $color-link;
+                transition: all 300ms ease-in;
+                width: 100%;
+                left: 0;
+            }
         }
         &.link-prototypes {
-            border-left: solid 3px $color-primary;
+            border-bottom: solid 3px $color-primary;
         }
     }
     @media screen and (max-width: 760px) {
-        li {
-            display: block;
-            width: 100%;
-            border-bottom: solid 1px transparent;
-        }
         .btn {
             width: 100%;
         }
     }
+
     @media screen and (min-width: 768px) {
-        li {
-            display: table-cell;
-            width: initial;
-        }
+        padding: 20px 0;
+        text-align: center;
+
     }
 }
