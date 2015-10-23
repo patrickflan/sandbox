@@ -20,8 +20,14 @@
         <main>
             <section class="vh75 background-image size-cover x-center y-top fixed aurora-borealis">
                 <div class="hero middle">
-                    <h1 class="color-invert margin-xsm-bottom">Patrick Flanagan</h1>
-                    <h5 class="color-invert margin-no">Sr. User Interface Application Developer, Strategic Technology Solutions (STS) at HealthGrades</h5>
+                    <h1 class="color-invert margin-xsm-bottom">
+                        <span class="time-crop">
+                            <span class="background-image size-cover time x-center y-center scroll"></span>
+                        </span>
+                        
+                        Patrick Flanagan
+                    </h1>
+                    <p class="color-invert margin-no">Sr. User Interface Application Developer, Strategic Technology Solutions (STS) at HealthGrades</p>
                 </div>
             </section>
             <section>
@@ -88,9 +94,23 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript">
         WebFontConfig = {
-            google: { families: ['Droid+Sans::latin'] }
+            google: { families: ['Droid+Sans::latin', 'Sumana::latin'] }
         };
         (function () {
+            
+            var _pf = _pf || {};
+
+            _pf.foo = { 
+                toAlert: 'test' 
+            };
+            _pf.bar = function (arg) {
+                alert(arg);
+            };
+            with (_pf) {
+                //bar(foo.toAlert);
+            }
+
+            $('.time').addClass('slide-down');
 
             $('.off-canvas-trigger').on('click', function (event) {
                 event.preventDefault();

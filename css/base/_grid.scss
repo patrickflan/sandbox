@@ -3,7 +3,7 @@
 
 
 section {
-    padding: $xlg-spacing;
+    padding: $xlg-sizing;
     width: 100%;
     box-sizing: border-box;
     position: relative;
@@ -17,34 +17,22 @@ section {
         height: 50vh;
     }
     &.vh100 {
-        //height: calc(100vh - #{$xlg-spacing} * 2);
+        //height: calc(100vh - #{$xlg-sizing} * 2);
     }
 
 }
 
 .hero {
     position: absolute;
-    width: 578px;
     left: 50%;
-    margin-left: -284px;
+    width: 320px;
+    margin-left: -160px;
     text-align: center;
-    top: 15%;
-}
-
-
-/*section {
-    padding: 0;
-    position: relative;
-    display: flexbox;
-    min-width: calc(100vw - 40px);
-    min-height: calc(100vh - 40px);
-    background: $color-medium-lite;
-    box-sizing: border-box;
-    padding: 20px;
-    background: $color-medium-lite;
-    margin: 20px;
-    align-items: center;
-    > p {
-        margin-top: 0;
+    top: 0;
+    transform: scale(.75);
+    @media screen and (min-width: 768px) {
+        width: 578px;
+        margin-left: -284px;
+        top: 15%;
     }
-}*/
+}

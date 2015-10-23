@@ -1,7 +1,7 @@
 ﻿
 html {
     font-size: $base-size;   // 1rem = 16px
-    font-family: 'Droid Sans', sans-serif;
+    font-family: 'Sumana', serif;
     color: $color-dark-gray;
     @media screen and (min-width: 300px) {
         font-size: 18px;
@@ -29,6 +29,7 @@ body {
 
 .heading {
     margin: 0;
+    font-family: 'Droid Sans', sans-serif;
 }
 
 h1 {
@@ -42,6 +43,7 @@ h2 {
 
 h3 {
     @extend .heading;
+    font-size: $xlg-sizing;
 }
 
 h4 {
@@ -54,8 +56,17 @@ h4 {
 
 ul {
     //font-size: .75rem;
+    //background: blue;
     li {
-        margin-bottom: $md-spacing;
+        margin-bottom: $sm-sizing;
+        list-style: none;
+        position: relative;
+        &:before {
+            content: '●';
+            position: absolute;
+            top: 0;
+            left: -20px;
+        }
     }
     &:last-child {
         @extend .margin-bottom-none; 

@@ -1,4 +1,5 @@
-﻿/*@mixin bp-large {
+﻿@charset "UTF-8";
+/*@mixin bp-large {
   @media only screen and (max-width: 60em) {
     @content;
   }
@@ -36,7 +37,7 @@
 }*/
 html {
   font-size: 16px;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Sumana', serif;
   color: #484848; }
   @media screen and (min-width: 300px) {
     html {
@@ -48,16 +49,27 @@ body {
   overflow-x: hidden; }
 
 .heading, h1, h2, h3, h4 {
-  margin: 0; }
+  margin: 0;
+  font-family: 'Droid Sans', sans-serif; }
 
 h1 {
   font-size: 2.75rem; }
+
+h3 {
+  font-size: 2rem; }
 
 /*p {
   font-size: .75rem;
 }*/
 ul li {
-  margin-bottom: 1rem; }
+  margin-bottom: 0.75rem;
+  list-style: none;
+  position: relative; }
+  ul li:before {
+    content: '●';
+    position: absolute;
+    top: 0;
+    left: -20px; }
 
 a {
   color: #408CCC; }
@@ -91,28 +103,18 @@ section {
 
 .hero {
   position: absolute;
-  width: 578px;
   left: 50%;
-  margin-left: -284px;
+  width: 320px;
+  margin-left: -160px;
   text-align: center;
-  top: 15%; }
+  top: 0;
+  transform: scale(0.75); }
+  @media screen and (min-width: 768px) {
+    .hero {
+      width: 578px;
+      margin-left: -284px;
+      top: 15%; } }
 
-/*section {
-    padding: 0;
-    position: relative;
-    display: flexbox;
-    min-width: calc(100vw - 40px);
-    min-height: calc(100vh - 40px);
-    background: $color-medium-lite;
-    box-sizing: border-box;
-    padding: 20px;
-    background: $color-medium-lite;
-    margin: 20px;
-    align-items: center;
-    > p {
-        margin-top: 0;
-    }
-}*/
 .color-invert {
   color: #fff; }
 
@@ -196,21 +198,21 @@ ul.clear-styles, ul.clear-styles li {
   margin-left: 2rem; }
 
 .margin-xxlg-top {
-  margin-top: 3rem; }
+  margin-top: 2.75rem; }
 
 .margin-xxlg-right {
-  margin-right: 3rem; }
+  margin-right: 2.75rem; }
 
 .margin-xxlg-bottom {
-  margin-bottom: 3rem; }
+  margin-bottom: 2.75rem; }
 
 .margin-xxlg-left {
-  margin-left: 3rem; }
+  margin-left: 2.75rem; }
 
 .off-canvas-trigger {
   display: none; }
 
-@media screen and (min-width: 250px) and (max-width: 768px) {
+@media screen and (min-width: 250px) and (max-width: 760px) {
   .off-canvas {
     padding-top: 50px;
     position: relative;
@@ -252,18 +254,18 @@ ul.clear-styles, ul.clear-styles li {
   top: 0;
   left: 0;
   z-index: 2;
-  width: 100%;
-  box-sizing: border-box; }
-  @media screen and (min-width: 250px) {
-    .site-header {
-      text-align: center;
-      padding: 15px 30px; } }
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  width: 100%; }
+  .site-header .header-logo {
+    font-size: 26px;
+    font-family: 'Droid Sans', sans-serif; }
   @media screen and (min-width: 768px) {
     .site-header {
       text-align: left;
-      padding: 25px 20px; }
-      .site-header .header-logo {
-        font-size: 26px; } }
+      padding: 25px 20px;
+      width: auto; } }
 
 .site-nav .btn {
   margin-right: 5px; }
@@ -321,6 +323,9 @@ ul.clear-styles, ul.clear-styles li {
   @media screen and (min-width: 768px) {
     .background-image.fixed {
       background-attachment: fixed; } }
+  @media screen and (min-width: 768px) {
+    .background-image.scroll {
+      background-attachment: scroll; } }
   @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
     .background-image.aurora-borealis {
       background-image: url(../images/aurora-borealis/aurora-borealis.jpeg); } }
@@ -388,4 +393,20 @@ ul.clear-styles, ul.clear-styles li {
 @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 736px) {
     min-height: 414px;
 }*/
+/*.time-crop {
+    margin-bottom: 18px;
+    display: block;
+    height: 75px;
+    overflow:hidden;
+}*/
+.time {
+  display: block;
+  position: relative;
+  margin: 0 auto 18px;
+  height: 200px;
+  width: 200px;
+  background-image: url(../images/time-c.jpg);
+  border-radius: 24rem;
+  transition: all 300ms ease-in;
+  box-shadow: inset 0px 0px 0px 5px rgba(225, 225, 225, 0.5); }
 

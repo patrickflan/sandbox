@@ -31,32 +31,32 @@ ul {
 }
 
 
-@include spacing(margin, 'xsm', $xsm-spacing, 'top');
-@include spacing(margin, 'xsm', $xsm-spacing, 'right');
-@include spacing(margin, 'xsm', $xsm-spacing, 'bottom');
-@include spacing(margin, 'xsm', $xsm-spacing, 'left');
+@include spacing(margin, 'xsm', $xsm-sizing, 'top');
+@include spacing(margin, 'xsm', $xsm-sizing, 'right');
+@include spacing(margin, 'xsm', $xsm-sizing, 'bottom');
+@include spacing(margin, 'xsm', $xsm-sizing, 'left');
 
-@include spacing(margin, 'sm', $sm-spacing, 'top');
-@include spacing(margin, 'sm', $sm-spacing, 'right');
-@include spacing(margin, 'sm', $sm-spacing, 'bottom');
-@include spacing(margin, 'sm', $sm-spacing, 'left');
+@include spacing(margin, 'sm', $sm-sizing, 'top');
+@include spacing(margin, 'sm', $sm-sizing, 'right');
+@include spacing(margin, 'sm', $sm-sizing, 'bottom');
+@include spacing(margin, 'sm', $sm-sizing, 'left');
 
-@include spacing(margin, 'md', $md-spacing, 'top');
-@include spacing(margin, 'md', $md-spacing, 'right');
-@include spacing(margin, 'md', $md-spacing, 'bottom');
-@include spacing(margin, 'md', $md-spacing, 'left');
+@include spacing(margin, 'md', $md-sizing, 'top');
+@include spacing(margin, 'md', $md-sizing, 'right');
+@include spacing(margin, 'md', $md-sizing, 'bottom');
+@include spacing(margin, 'md', $md-sizing, 'left');
 
-@include spacing(margin, 'lg', $lg-spacing, 'top');
-@include spacing(margin, 'lg', $lg-spacing, 'right');
-@include spacing(margin, 'lg', $lg-spacing, 'bottom');
-@include spacing(margin, 'lg', $lg-spacing, 'left');
+@include spacing(margin, 'lg', $lg-sizing, 'top');
+@include spacing(margin, 'lg', $lg-sizing, 'right');
+@include spacing(margin, 'lg', $lg-sizing, 'bottom');
+@include spacing(margin, 'lg', $lg-sizing, 'left');
 
-@include spacing(margin, 'xlg', $xlg-spacing, 'top');
-@include spacing(margin, 'xlg', $xlg-spacing, 'right');
-@include spacing(margin, 'xlg', $xlg-spacing, 'bottom');
-@include spacing(margin, 'xlg', $xlg-spacing, 'left');
+@include spacing(margin, 'xlg', $xlg-sizing, 'top');
+@include spacing(margin, 'xlg', $xlg-sizing, 'right');
+@include spacing(margin, 'xlg', $xlg-sizing, 'bottom');
+@include spacing(margin, 'xlg', $xlg-sizing, 'left');
 
-@include spacing(margin, 'xxlg', $xxlg-spacing, 'top');
-@include spacing(margin, 'xxlg', $xxlg-spacing, 'right');
-@include spacing(margin, 'xxlg', $xxlg-spacing, 'bottom');
-@include spacing(margin, 'xxlg', $xxlg-spacing, 'left');
+@include spacing(margin, 'xxlg', $xxlg-sizing, 'top');
+@include spacing(margin, 'xxlg', $xxlg-sizing, 'right');
+@include spacing(margin, 'xxlg', $xxlg-sizing, 'bottom');
+@include spacing(margin, 'xxlg', $xxlg-sizing, 'left');
