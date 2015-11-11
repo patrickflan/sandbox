@@ -6,5 +6,9 @@
   {
     "outputFile": "css/prototype.css",
     "inputFile": "css/prototype.scss"
+  },
+  {
+    "outputFile": "js/pf-site.es5.js",
+    "inputFile": "js/pf-site.js"
   }
 ]

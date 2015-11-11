@@ -24,7 +24,7 @@
                         <span class="time-crop">
                             <span class="background-image size-cover time x-center y-center scroll"></span>
                         </span>
-                        
+
                         Patrick Flanagan
                     </h1>
                     <p class="color-invert margin-no">Sr. User Interface Application Developer, Strategic Technology Solutions (STS) at HealthGrades</p>
@@ -88,71 +88,21 @@
             <span class="header-logo"><strong>Patrick</strong> Flanagan</span>
         </header>
     </div>
-    
 
-    
+    <!--
+        // things todo
+        1) setTimeout should only apply when off canvas is available 
+        2) scrollTo offset should account for fixed nav
+        3) offcanvas and fixed header needs rethinking do to translate3d
+    -->
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/pf-site.es5.min.js"></script>
     <script type="text/javascript">
         WebFontConfig = {
             google: { families: ['Droid+Sans::latin', 'Sumana::latin'] }
         };
         (function () {
-            
-            var _pf = _pf || {};
-
-            _pf.props = {
-                $siteNav: $('.site-nav'),
-                $offCanvas: {
-                    trigger: $('.off-canvas-trigger'),
-                    open: ''
-                }
-            };
-
-
-            // site-nav event
-            _pf.props.$siteNav.on('click', 'a', function (event) {
-                event.preventDefault(event),
-
-                $that = $(this);
-                _pf.offCanvasToggle($that);
-
-                _pf.props.$offCanvas.open = setTimeout(function () {
-                    _pf.sectionScroll($that);
-                }, 400);
-
-                _pf.linkText($that);
-            });
-
-            // off canvas event
-            _pf.props.$offCanvas.trigger.on('click', function (event) {
-                event.preventDefault();
-                $that = $(this);
-                _pf.offCanvasToggle($that);
-            });
-
-            _pf.sectionScroll = function($that) {
-                if ($that) {
-                    $('html, body').animate({
-                        scrollTop: $($that.attr('href')).offset().top
-                    }, 1000);
-
-                    _pf.props.$offCanvas.open = '';
-                }
-            }
-
-            _pf.offCanvasToggle = function ($that) {
-                if ($that) {
-                    $that.closest('.off-canvas').toggleClass('open');
-                }
-            }
-
-            _pf.linkText = function ($that) {
-                if ($that) {
-                    console.log($that.text());
-                }
-            }
-            
-            
             // google fonts
             var wf = document.createElement('script');
             wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +

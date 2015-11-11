@@ -192,28 +192,28 @@ ul.clear-styles, ul.clear-styles li {
   @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
     .background-image.aurora-borealis {
       background-image: url(../images/aurora-borealis/aurora-borealis.jpeg); } }
-  @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
+  @media (device-aspect-ratio: 16 / 10), (device-aspect-ratio: 10 / 16) {
     .background-image.aurora-borealis {
       background-image: url(../images/aurora-borealis/aurora-borealis.jpeg); } }
-  @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
+  @media (device-aspect-ratio: 4 / 3), (device-aspect-ratio: 3 / 4) {
     .background-image.aurora-borealis {
       background-image: url(../images/aurora-borealis/aurora-borealis.jpeg); } }
   @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
     .background-image.bokeh {
       background-image: url(../images/bokeh/BF-Bokeh_1492x1492.jpg); } }
-  @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
+  @media (device-aspect-ratio: 16 / 10), (device-aspect-ratio: 10 / 16) {
     .background-image.bokeh {
       background-image: url(../images/bokeh/BF-Bokeh_2000x2000.jpg); } }
-  @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
+  @media (device-aspect-ratio: 4 / 3), (device-aspect-ratio: 3 / 4) {
     .background-image.bokeh {
       background-image: url(../images/bokeh/BF-Bokeh_2000x2000.jpg); } }
   @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
     .background-image.banner-one {
       background-image: url(../images/banner-one/Image-Test_1492x1492_q8.jpg); } }
-  @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
+  @media (device-aspect-ratio: 16 / 10), (device-aspect-ratio: 10 / 16) {
     .background-image.banner-one {
       background-image: url(../images/banner-one/Image-Test_2000x2000_q8.jpg); } }
-  @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
+  @media (device-aspect-ratio: 4 / 3), (device-aspect-ratio: 3 / 4) {
     .background-image.banner-one {
       background-image: url(../images/banner-one/Image-Test_2000x2000_q8.jpg); } }
 
