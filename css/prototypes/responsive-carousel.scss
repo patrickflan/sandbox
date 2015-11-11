@@ -1,11 +1,11 @@
 ﻿// Base Styles
-@import 'base/_variables.scss';
-@import 'base/_mixins.scss';
-@import 'base/_core.scss';
-@import 'base/_helper-classes.scss';
+@import '../base/_variables.scss';
+@import '../base/_mixins.scss';
+@import '../base/_core.scss';
+@import '../base/_helper-classes.scss';
 
 // Components
-@import "components/background-image";
+@import "../components/background-image";
 
 // Prototype
 $headerSticky: 60px;

@@ -4,8 +4,12 @@
     "inputFile": "css/main.scss"
   },
   {
-    "outputFile": "css/prototype.css",
-    "inputFile": "css/prototype.scss"
+    "outputFile": "css/prototypes/responsive-carousel.css",
+    "inputFile": "css/prototypes/responsive-carousel.scss"
+  },
+  {
+    "outputFile": "css/prototypes/off-canvas.css",
+    "inputFile": "css/prototypes/off-canvas.scss"
   },
   {
     "outputFile": "js/pf-site.es5.js",

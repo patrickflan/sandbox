@@ -25,92 +25,49 @@
     &.aurora-borealis {
         // ratio mobile
         @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
-            background-image: url(../images/aurora-borealis/aurora-borealis.jpeg);
+            background-image: url(#{$base-path}images/aurora-borealis/aurora-borealis.jpeg);
         }
         
         // ratio 16/10 - Samsung/Google Nexus 10
         @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
-            background-image: url(../images/aurora-borealis/aurora-borealis.jpeg);
+            background-image: url(#{$base-path}images/aurora-borealis/aurora-borealis.jpeg);
         }
 
         // ratio 3/4 - iPad
         @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
-            background-image: url(../images/aurora-borealis/aurora-borealis.jpeg);
+            background-image: url(#{$base-path}images/aurora-borealis/aurora-borealis.jpeg);
         }
     }
     &.bokeh {
         // ratio mobile
         @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
-            background-image: url(../images/bokeh/BF-Bokeh_1492x1492.jpg);
+            background-image: url(#{$base-path}images/bokeh/BF-Bokeh_1492x1492.jpg);
         }
         
         // ratio 16/10 - Samsung/Google Nexus 10
         @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
-            background-image: url(../images/bokeh/BF-Bokeh_2000x2000.jpg);
+            background-image: url(#{$base-path}images/bokeh/BF-Bokeh_2000x2000.jpg);
         }
 
         // ratio 3/4 - iPad
         @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
-            background-image: url(../images/bokeh/BF-Bokeh_2000x2000.jpg);
+            background-image: url(#{$base-path}images/bokeh/BF-Bokeh_2000x2000.jpg);
         }
     }
     &.banner-one {
         // ratio mobile
         @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
-            background-image: url(../images/banner-one/Image-Test_1492x1492_q8.jpg);
+            background-image: url(#{$base-path}images/banner-one/Image-Test_1492x1492_q8.jpg);
         }
         
         // ratio 16/10 - Samsung/Google Nexus 10
         @media (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
-            background-image: url(../images/banner-one/Image-Test_2000x2000_q8.jpg);
+            background-image: url(#{$base-path}images/banner-one/Image-Test_2000x2000_q8.jpg);
         }
 
         // ratio 3/4 - iPad
         @media (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
-            background-image: url(../images/banner-one/Image-Test_2000x2000_q8.jpg);
+            background-image: url(#{$base-path}images/banner-one/Image-Test_2000x2000_q8.jpg);
         }
     }
 }
-
-
-/*@media (device-aspect-ratio: 10/16) {
-    background-size: inherit;
-}
-@media (min-device-height: 600px) and (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
-    min-height: 600px;
-}
-@media (min-device-height: 800px) and (device-aspect-ratio: 16/10), (device-aspect-ratio: 10/16) {
-    min-height: 800px;
-}*/
-
-/*@media (min-device-height: 760px) and (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
-    min-height: 600px;
-}
-@media (min-device-height: 1024px) and (device-aspect-ratio: 4/3), (device-aspect-ratio: 3/4) {
-    min-height: 800px;
-}*/
-/*@media (min-width: 800px) {
-    background-image: url(../images/Image-Test_Galaxy-Pro_1280x800_25q.jpg);
-}*/
-
-/*@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px) {
-    min-height: 568px;
-}
-@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 375px) {
-    min-height: 627px;
-}
-@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 414px) {
-    min-height: 746px;
-}
-@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 480px) {
-    min-height: 320px;
-}
-@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 568px) {
-    min-height: 320px;
-}
-@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 667px) {
-    min-height: 375px;
-}
-@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 736px) {
-    min-height: 414px;
-}*/
