@@ -114,12 +114,11 @@
                 event.preventDefault(event),
 
                 $that = $(this);
-
-                
                 _pf.offCanvasToggle($that);
 
-                _pf.sectionScroll($that)
-                
+                _pf.props.$offCanvas.open = setTimeout(function () {
+                    _pf.sectionScroll($that);
+                }, 400);
 
                 _pf.linkText($that);
             });
@@ -133,11 +132,11 @@
 
             _pf.sectionScroll = function($that) {
                 if ($that) {
-                    scrollToTarget = $($that.attr('href'));
-                    
                     $('html, body').animate({
-                        scrollTop: scrollToTarget.offset().top
+                        scrollTop: $($that.attr('href')).offset().top
                     }, 1000);
+
+                    _pf.props.$offCanvas.open = '';
                 }
             }
 
@@ -151,18 +150,6 @@
                 if ($that) {
                     console.log($that.text());
                 }
-            }
-            
-
-
-            var myVar;
-
-            function myFunction() {
-                myVar = setTimeout(function () { alert("Hello") }, 3000);
-            }
-
-            function myStopFunction() {
-                clearTimeout(myVar);
             }
             
             
