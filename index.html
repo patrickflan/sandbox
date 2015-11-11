@@ -36,11 +36,11 @@
             </section>
             <section id="pf-resume" class="color-invert background-image size-cover x-center y-top fixed banner-one">
                 <h3 class="margin-md-bottom">Objective</h3>
-                <p>To continue growing as a front-end professional at company where creativity and innovation are encouraged.</p>
+                <p>To continue growing as a front-end professional at a company where creativity and innovation are encouraged.</p>
             </section>
             <section>
                 <h3 class="margin-md-bottom">Branding Statement</h3>
-                <p>A professional front-end UI developer with a persuasive and energetic personality, capacity and interest to continue learning. A team player who loves to grow artistically and has created award-winning designs which have brought world-wide recognition from peers.</p>
+                <p>A professional front-end UI developer with a persuasive and energetic personality and with an interest to continue learning. A team player who loves to grow artistically and has created award-winning designs.</p>
             </section>
             <section>
                 <h3 class="margin-md-bottom">Skills</h3>
@@ -104,7 +104,7 @@
                 $siteNav: $('.site-nav'),
                 $offCanvas: {
                     trigger: $('.off-canvas-trigger'),
-                    open: false
+                    open: ''
                 }
             };
 
@@ -115,8 +115,12 @@
 
                 $that = $(this);
 
-                _pf.sectionScroll($that);
+                
                 _pf.offCanvasToggle($that);
+
+                _pf.sectionScroll($that)
+                
+
                 _pf.linkText($that);
             });
 
