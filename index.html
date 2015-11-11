@@ -14,7 +14,7 @@
 <body>
     <div class="off-canvas">
         <nav class="site-nav">
-            <a href="#" class="btn link-resume">Resume</a>
+            <a href="#pf-resume" class="btn link-resume">Resume</a>
             <a href="#pf-prototypes" class="btn link-prototypes">Prototypes</a>
         </nav>
         <main>
@@ -34,7 +34,7 @@
                 <h3 class="margin-md-bottom">Responsive Carousel</h3>
                 <a href="_responsive-carousel.html" class="btn">view demo</a>
             </section>
-            <section class="color-invert background-image size-cover x-center y-top fixed banner-one">
+            <section id="pf-resume" class="color-invert background-image size-cover x-center y-top fixed banner-one">
                 <h3 class="margin-md-bottom">Objective</h3>
                 <p>To continue growing as a front-end professional at company where creativity and innovation are encouraged.</p>
             </section>
@@ -100,31 +100,17 @@
             
             var _pf = _pf || {};
 
-            _pf.foo = { 
-                toAlert: 'test' 
-            };
-            _pf.bar = function (arg) {
-                alert(arg);
-            };
-            with (_pf) {
-                //bar(foo.toAlert);
-            }
-
-            //$('html, body').animate({
-            //    scrollTop: $("#elementtoScrollToID").offset().top + offset
-            //}, 2000);
-
-            //var $siteNav = $('.site-nav'),
-            //    $offCanvasTrigger = $('.off-canvas-trigger');
-
-            _pf.vars = {
+            _pf.props = {
                 $siteNav: $('.site-nav'),
-                $offCanvasTrigger: $('.off-canvas-trigger')
+                $offCanvas: {
+                    trigger: $('.off-canvas-trigger'),
+                    open: false
+                }
             };
 
 
-            // site-nav
-            _pf.vars.$siteNav.on('click', 'a', function (event) {
+            // site-nav event
+            _pf.props.$siteNav.on('click', 'a', function (event) {
                 event.preventDefault(event),
 
                 $that = $(this);
@@ -134,15 +120,20 @@
                 _pf.linkText($that);
             });
 
+            // off canvas event
+            _pf.props.$offCanvas.trigger.on('click', function (event) {
+                event.preventDefault();
+                $that = $(this);
+                _pf.offCanvasToggle($that);
+            });
+
             _pf.sectionScroll = function($that) {
                 if ($that) {
-                    console.log($that.attr('href'));
-                }
-            }
-
-            _pf.linkText = function($that) {
-                if ($that) {
-                    console.log($that.text());
+                    scrollToTarget = $($that.attr('href'));
+                    
+                    $('html, body').animate({
+                        scrollTop: scrollToTarget.offset().top
+                    }, 1000);
                 }
             }
 
@@ -151,13 +142,25 @@
                     $that.closest('.off-canvas').toggleClass('open');
                 }
             }
+
+            _pf.linkText = function ($that) {
+                if ($that) {
+                    console.log($that.text());
+                }
+            }
             
-            // off canvas
-            _pf.vars.$offCanvasTrigger.on('click', function (event) {
-                event.preventDefault(),
-                $that = $(this);
-                _pf.offCanvasToggle($that);
-            });
+
+
+            var myVar;
+
+            function myFunction() {
+                myVar = setTimeout(function () { alert("Hello") }, 3000);
+            }
+
+            function myStopFunction() {
+                clearTimeout(myVar);
+            }
+            
             
             // google fonts
             var wf = document.createElement('script');
