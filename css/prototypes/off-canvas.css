@@ -1,40 +1,4 @@
 ﻿@charset "UTF-8";
-/*@mixin bp-large {
-  @media only screen and (max-width: 60em) {
-    @content;
-  }
-}
-
-@mixin bp-medium {
-  @media only screen and (max-width: 40em) {
-    @content;
-  }
-}
-
-@mixin bp-small {
-  @media only screen and (max-width: 30em) {
-    @content;
-  }
-}
-
-.sidebar {
-  width: 60%;
-  float: left;
-  margin: 0 2% 0 0;
-  @include bp-small {
-    width: 100%;
-    float: none;
-    margin: 0;
-  }
-}
-
-.topbar {
-    @include bp-small {
-    width: 100%;
-    float: none;
-    margin: 0;
-  }
-}*/
 html {
   font-size: 16px;
   font-family: 'Sumana', serif;
@@ -173,47 +137,18 @@ ul.clear-styles, ul.clear-styles li {
 .margin-xxlg-left {
   margin-left: 2.75rem; }
 
-.background-image {
-  background-repeat: no-repeat; }
-  .background-image.size-cover {
-    background-size: cover; }
-  .background-image.x-center {
-    background-position-x: center; }
-  .background-image.y-center {
-    background-position-y: center; }
-  .background-image.y-top {
-    background-position-y: top; }
-  @media screen and (min-width: 768px) {
-    .background-image.fixed {
-      background-attachment: fixed; } }
-  @media screen and (min-width: 768px) {
-    .background-image.scroll {
-      background-attachment: scroll; } }
-  @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
-    .background-image.aurora-borealis {
-      background-image: url(/images/aurora-borealis/aurora-borealis.jpeg); } }
-  @media (device-aspect-ratio: 16 / 10), (device-aspect-ratio: 10 / 16) {
-    .background-image.aurora-borealis {
-      background-image: url(/images/aurora-borealis/aurora-borealis.jpeg); } }
-  @media (device-aspect-ratio: 4 / 3), (device-aspect-ratio: 3 / 4) {
-    .background-image.aurora-borealis {
-      background-image: url(/images/aurora-borealis/aurora-borealis.jpeg); } }
-  @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
-    .background-image.bokeh {
-      background-image: url(/images/bokeh/BF-Bokeh_1492x1492.jpg); } }
-  @media (device-aspect-ratio: 16 / 10), (device-aspect-ratio: 10 / 16) {
-    .background-image.bokeh {
-      background-image: url(/images/bokeh/BF-Bokeh_2000x2000.jpg); } }
-  @media (device-aspect-ratio: 4 / 3), (device-aspect-ratio: 3 / 4) {
-    .background-image.bokeh {
-      background-image: url(/images/bokeh/BF-Bokeh_2000x2000.jpg); } }
-  @media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), (min-device-width: 736px) {
-    .background-image.banner-one {
-      background-image: url(/images/banner-one/Image-Test_1492x1492_q8.jpg); } }
-  @media (device-aspect-ratio: 16 / 10), (device-aspect-ratio: 10 / 16) {
-    .background-image.banner-one {
-      background-image: url(/images/banner-one/Image-Test_2000x2000_q8.jpg); } }
-  @media (device-aspect-ratio: 4 / 3), (device-aspect-ratio: 3 / 4) {
-    .background-image.banner-one {
-      background-image: url(/images/banner-one/Image-Test_2000x2000_q8.jpg); } }
+.off-canvas {
+  height: 100vh; }
+  @media (max-width: 414px) {
+    .off-canvas {
+      background: #FF6F69; } }
+  @media (min-width: 415px) and (max-width: 736px) {
+    .off-canvas {
+      background: #FFCC5C; } }
+  @media (min-width: 737px) and (max-width: 1280px) {
+    .off-canvas {
+      background: #96CEB4; } }
+  @media (min-width: 1281px) {
+    .off-canvas {
+      background: #989898; } }
 
