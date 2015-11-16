@@ -1,5 +1,4 @@
 ﻿.site-header {
-    
     position: fixed;
     top: 0;
     left: 0;
@@ -8,13 +7,46 @@
     text-align: center;
     padding: 10px;
     width: 100%;
+    background: #fff;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    transition: transform 500ms ease;
+    box-shadow: rgb(136, 136, 136) 0px 0px 10px 0px;
     .header-logo {
         font-size: 26px;
         font-family: 'Droid Sans', sans-serif;
     }
-    @media screen and (min-width: 768px) {
+    .off-canvas-trigger {
+        position: absolute;
+        display: table-cell;
+        left: 0;
+        top: 0;
+        text-decoration:none;
+        padding: 13px;
+        background: $color-dark-gray;
+        color: $color-medium-lite;
+        height: 50px;
+        width: 50px;
+        box-sizing:border-box;
+        vertical-align: middle;
+    }
+
+    @include bp(mobile) { 
+        background: #fff;
+        height: 50px;
+    }
+    @include bp(tablet) { 
         text-align: left;
         padding: 25px 20px;
-        width: auto;
+        .off-canvas-trigger {
+            display: none;
+        }
+    }
+    @include bp(desktop) { 
+        text-align: left;
+        padding: 25px 20px;
+        .off-canvas-trigger {
+            display: none;
+        }
     }
 }

@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
+    <nav class="site-nav">
+        <a href="#pf-resume" class="btn link-resume">Resume</a>
+        <a href="#pf-prototypes" class="btn link-prototypes">Prototypes</a>
+    </nav>
     <div class="off-canvas">
-        <nav class="site-nav">
-            <a href="#pf-resume" class="btn link-resume">Resume</a>
-            <a href="#pf-prototypes" class="btn link-prototypes">Prototypes</a>
-        </nav>
+
         <main>
             <section class="vh75 background-image size-cover x-center y-top fixed aurora-borealis">
                 <div class="hero middle">
@@ -83,22 +84,22 @@
                 </p>
             </section>
         </main>
-        <header class="site-header">
-            <a href="" class="off-canvas-trigger">
-                <i class="fa fa-bars"></i>
-            </a>
-            <span class="header-logo"><strong>Patrick</strong> Flanagan</span>
-        </header>
     </div>
-
+    <header class="site-header">
+        <a href="" class="off-canvas-trigger">
+            <i class="fa fa-bars"></i>
+        </a>
+        <span class="header-logo"><strong>Patrick</strong> Flanagan</span>
+    </header>
     <!--
         // things todo
-        1) setTimeout should only apply when off canvas is available 
+        1) setTimeout should only apply when off canvas is available
         2) scrollTo offset should account for fixed nav
         3) offcanvas and fixed header needs rethinking do to translate3d
     -->
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/modernizer-custom.min.js"></script>
     <script type="text/javascript" src="js/pf-site.es5.min.js"></script>
     <script type="text/javascript">
         WebFontConfig = {

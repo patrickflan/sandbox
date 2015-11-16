@@ -6,40 +6,29 @@
         padding-top: 50px;
         position: relative;
         transform: translate3d(0, 0, 0);
-        transition: transform 500ms ease;
-        .off-canvas-trigger {
-            position: absolute;
-            display: table-cell;
-            left: 0;
-            top: 0;
-            text-decoration:none;
-            padding: 13px;
-            background: $color-dark-gray;
-            color: $color-medium-lite;
-            height: 50px;
-            width: 50px;
-            box-sizing:border-box;
-            vertical-align: middle;
-        }
-        .site-nav {
-            position: absolute;
-            height: 100%;
-            left: -$half;
-            width: $half;
-            top: 0;
-        }
-        &.open {
-            transform: translate3d(#{$half}, 0, 0);
-            transition: transform 500ms ease;
-            .off-canvas-trigger {
-                opacity: 1;
-                transition: opacity 400ms ease-in;
-                background: $color-primary;
-            }
-        }
+        transition: transform 500ms ease; 
     }
 
     @media screen and (min-width: 768px) {
         padding-top: 80px;
+    }
+}
+body.open {
+    .site-header, .off-canvas {
+        transform: translate3d(#{$half}, 0, 0);
+        transition: transform 500ms ease;
+    }
+    .off-canvas {
+        box-shadow: #888 0 0 10px 0;
+    }
+    .site-nav {
+        opacity: 1;
+        transition: all 500ms ease;
+        left: 0;
+    }
+    .off-canvas-trigger {
+        opacity: 1;
+        transition: opacity 700ms ease-in;
+        background: $color-primary;
     }
 }

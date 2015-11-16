@@ -4,5 +4,11 @@
     "inputFiles": [
       "index.html"
     ]
+  },
+  {
+    "outputFileName": "js/modernizer-custom.js",
+    "inputFiles": [
+      "js/modernizer-custom.js"
+    ]
   }
 ]

@@ -18,3 +18,45 @@
   -o-transition: $args;
   transition: $args;
 }
+
+$media-query-toggle: true;
+
+@mixin bp($point) {
+    @if ($media-query-toggle) {
+        $break-mobile: "(max-width: 736px)";
+        $break-mobile-portrait: "(max-width: 414px)";
+        $break-mobile-landscape: "(min-width: 415px) and (max-width: 736px)";
+        $break-tablet: "(min-width: 737px) and (max-width: 1280px)";
+        $break-desktop: "(min-width: 1281px)";
+        // mobile 
+        @if $point == mobile {
+            @media #{$break-mobile} {
+                @content;
+            }
+        }
+        // mobile portrait: iPhone 5-6+
+        @if $point == mobile-portrait {
+            @media #{$break-mobile-portrait} {
+                @content;
+            }
+        }
+        // mobile landscape: iPhone 5-6+
+        @else if $point == mobile-landscape {
+            @media #{$break-mobile-landscape} {
+                @content;
+            }
+        }
+        // tablet: iPad, Nexus 10
+        @else if $point == tablet {
+            @media #{$break-tablet} {
+                @content;
+            }
+        }
+        // desktop
+        @else if $point == desktop {
+            @media #{$break-desktop} {
+                @content;
+            }
+        }
+    }
+}

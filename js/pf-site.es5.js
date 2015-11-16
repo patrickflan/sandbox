@@ -7,49 +7,42 @@ $(function () {
         $siteNav: $('.site-nav'),
         $offCanvas: {
             trigger: $('.off-canvas-trigger'),
-            open: ''
+            open: false
         }
     };
+
+    $('.site-header');
 
     // site-nav event
     _pf.props.$siteNav.on('click', 'a', function (event) {
         event.preventDefault(event);
         var $that = $(this);
-        _pf.offCanvasToggle($that);
 
-        _pf.props.$offCanvas.open = setTimeout(function () {
+        if (_pf.props.$offCanvas.open) {
+            $('body').toggleClass('open');
+            _pf.props.$offCanvas.open = setTimeout(function () {
+                _pf.sectionScroll($that);
+                _pf.props.$offCanvas.open = false;
+            }, 400);
+        } else {
             _pf.sectionScroll($that);
-        }, 400);
-
-        _pf.linkText($that);
+        }
     });
 
     // off canvas event
     _pf.props.$offCanvas.trigger.on('click', function (event) {
         event.preventDefault();
-        var $that = $(this);
-        _pf.offCanvasToggle($that);
+        $('body').toggleClass('open');
+        _pf.props.$offCanvas.open = true;
     });
 
     _pf.sectionScroll = function ($that) {
         if ($that) {
             $('html, body').animate({
-                scrollTop: $($that.attr('href')).offset().top
+                scrollTop: $($that.attr('href')).offset().top - $('.site-header').outerHeight()
             }, 1000);
 
             _pf.props.$offCanvas.open = '';
-        }
-    };
-
-    _pf.offCanvasToggle = function ($that) {
-        if ($that) {
-            $that.closest('.off-canvas').toggleClass('open');
-        }
-    };
-
-    _pf.linkText = function ($that) {
-        if ($that) {
-            console.log($that.text());
         }
     };
 });
