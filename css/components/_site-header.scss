@@ -17,23 +17,26 @@
         font-family: 'Droid Sans', sans-serif;
     }
     .off-canvas-trigger {
-        position: absolute;
-        display: table-cell;
-        left: 0;
-        top: 0;
-        text-decoration:none;
-        padding: 13px;
-        background: $color-dark-gray;
-        color: $color-medium-lite;
-        height: 50px;
-        width: 50px;
-        box-sizing:border-box;
-        vertical-align: middle;
+        display: none;
     }
 
     @include bp(mobile) { 
         background: #fff;
         height: 50px;
+        .off-canvas-trigger {
+            position: absolute;
+            display: table-cell;
+            left: 0;
+            top: 0;
+            text-decoration:none;
+            padding: 13px;
+            background: $color-dark-gray;
+            color: $color-medium-lite;
+            height: 50px;
+            width: 50px;
+            box-sizing:border-box;
+            vertical-align: middle;
+        }
     }
     @include bp(tablet) { 
         text-align: left;

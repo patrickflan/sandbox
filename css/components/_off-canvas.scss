@@ -1,7 +1,5 @@
-﻿.off-canvas-trigger {
-    display: none;
-}
-.off-canvas {
+﻿.off-canvas {
+    background: #fff;
     @media screen and (min-width: 250px) and (max-width: 760px) {
         padding-top: 50px;
         position: relative;

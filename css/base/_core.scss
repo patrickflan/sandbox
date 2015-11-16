@@ -1,40 +1,22 @@
 ﻿
 html {
-    font-size: $base-size;   // 1rem = 16px
-    font-family: 'Sumana', serif;
+    font-family: 'Droid Sans', sans-serif;
     color: $color-dark-gray;
-    @media screen and (min-width: 300px) {
-        font-size: 18px;
-        line-height: 1.25;
-    }
-    @media screen and (min-width: 570px) {
-        //font-size: 15px;
-    }
-    @media screen and (min-width: 620px) {
-        // font-size: 32px;
-        // line-height: 36px;
-    }
-    @media screen and (min-width: 680px) {
-        //font-size: 22px;
-    }
-    @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
-        //font-size: 16px;
-    }
 }
 
 body {
+    font-size: $base-size;   // 1rem = 16px
     margin: 0;
     overflow-x: hidden;
 }
 
 .heading {
     margin: 0;
-    font-family: 'Droid Sans', sans-serif;
+    font-family: 'Sumana', serif;
 }
 
 h1 {
     @extend .heading;
-    font-size: 2.75rem;
 }
 
 h2 {
@@ -43,20 +25,14 @@ h2 {
 
 h3 {
     @extend .heading;
-    font-size: $xlg-sizing;
 }
 
 h4 {
     @extend .heading;
 }
 
-/*p {
-  font-size: .75rem;
-}*/
 
 ul {
-    //font-size: .75rem;
-    //background: blue;
     li {
         margin-bottom: $sm-sizing;
         list-style: none;
@@ -82,4 +58,41 @@ a {
 
 img {
     max-width: 100%;
+}
+
+@include bp(mobile) { 
+    body {
+        line-height: 1.375;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+
+}
+@include bp(tablet) { 
+    html {
+
+    }
+    body {
+        font-size: 22px;
+        line-height: 1.375;
+    }
+    h1 {
+        font-size: 4.5rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+}
+@include bp(desktop) { 
+    body {
+        font-size: 140%;
+        line-height: 1.375;
+    }
+    h1 {
+        font-size: 270%;
+    }
+    h3 {
+        font-size: 200%;
+    }
 }

@@ -3,7 +3,7 @@
 
 
 section {
-    padding: $xlg-sizing;
+    padding: $md-sizing;
     width: 100%;
     box-sizing: border-box;
     position: relative;
@@ -19,7 +19,12 @@ section {
     &.vh100 {
         //height: calc(100vh - #{$xlg-sizing} * 2);
     }
-
+    @include bp(tablet) { 
+        padding: $xlg-sizing;
+    }
+    @include bp(desktop) {
+        padding: $xxlg-sizing;
+    }
 }
 
 .hero {
@@ -29,10 +34,16 @@ section {
     margin-left: -160px;
     text-align: center;
     top: 0;
-    transform: scale(.75);
-    @media screen and (min-width: 768px) {
+    @include bp(mobile) { 
+        top: 8%;
+    }
+    @include bp(tablet) { 
         width: 578px;
         margin-left: -284px;
         top: 15%;
     }
+    @include bp(desktop) {
+    
+    }
+
 }
