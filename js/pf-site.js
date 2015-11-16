@@ -41,7 +41,6 @@
                 scrollTop: $($that.attr('href')).offset().top - $('.site-header').outerHeight()
             }, 1000);
 
-            _pf.props.$offCanvas.open = '';
         }
     };
 
