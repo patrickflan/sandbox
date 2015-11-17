@@ -43,35 +43,4 @@
             }
         }
     }
-
-
-    @include bp(mobile) { 
-        height: 100%;
-        .btn {
-            width: 100%;
-        }
-    }
-    @include bp(tablet) { 
-        padding: 20px 240px;
-        text-align: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        box-sizing: border-box;
-        z-index: 3;
-        opacity: 1;
-    }
-    @include bp(desktop) { 
-        padding: 20px 240px;
-        text-align: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        box-sizing: border-box;
-        z-index: 3;
-        opacity: 1;
-    }
-
 }

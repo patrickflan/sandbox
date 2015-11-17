@@ -12,6 +12,10 @@
     "inputFile": "scss/pages/main-tablet.scss"
   },
   {
+    "outputFile": "dist/css/main-desktop.css",
+    "inputFile": "scss/pages/main-desktop.scss"
+  },
+  {
     "outputFile": "dist/css/off-canvas.css",
     "inputFile": "scss/pages/off-canvas.scss"
   },

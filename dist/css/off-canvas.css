@@ -38,21 +38,21 @@ img {
 
 @media (min-width: 737px) and (max-width: 1280px) {
   body {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.375; }
   h1 {
-    font-size: 4.5rem; }
+    font-size: 3.2rem; }
   h3 {
-    font-size: 3rem; } }
+    font-size: 2.35rem; } }
 
 @media (min-width: 1281px) {
   body {
-    font-size: 140%;
+    font-size: 18px;
     line-height: 1.375; }
   h1 {
-    font-size: 270%; }
+    font-size: 3.2rem; }
   h3 {
-    font-size: 200%; } }
+    font-size: 2.35rem; } }
 
 .color-invert {
   color: #fff; }

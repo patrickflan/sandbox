@@ -30,12 +30,12 @@ section {
 .hero {
     position: absolute;
     left: 50%;
-    width: 320px;
-    margin-left: -160px;
     text-align: center;
     top: 0;
     @include bp(mobile) { 
         top: 8%;
+        width: 320px;
+        margin-left: -160px;
     }
     @include bp(tablet) { 
         width: 578px;
@@ -43,7 +43,9 @@ section {
         top: 15%;
     }
     @include bp(desktop) {
-    
+        width: 578px;
+        margin-left: -284px;
+        top: 15%;
     }
 
 }
