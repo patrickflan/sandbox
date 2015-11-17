@@ -1,0 +1,22 @@
+﻿// Base Styles
+@import 'scss/base/_variables.scss';
+@import 'scss/base/_mixins.scss';
+@import 'scss/base/_core.scss';
+@import 'scss/base/_btn.scss';
+@import 'scss/base/_grid.scss';
+@import 'scss/base/_helper-classes.scss';
+
+// Components 
+@import 'scss/components/_off-canvas.scss';
+@import 'scss/components/_site-header.scss';
+@import 'scss/components/_site-nav.scss';
+@import 'scss/components/_background-image.scss';
+
+/*.time-crop {
+    margin-bottom: 18px;
+    display: block;
+    height: 75px;
+    overflow:hidden;
+}*/
+
+

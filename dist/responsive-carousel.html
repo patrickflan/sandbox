@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Images</title>
+    <meta name="description" content="" />
+    <meta charset="utf-8" />
+    <meta name="author" content="//update.me">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <base target="_blank">
+    <title>Patrick Flanagan - Front-end UI Developer</title>
+    <link rel="stylesheet" href="css/prototypes/responsive-carousel.min.css" />
+</head>
+<body>
+    <header class="header-sticky">
+        sticky header
+    </header>
+    <div class="header-ad">
+        <div>advertisement</div>
+    </div>
+    <div class="carousel background-image bokeh size-cover x-center y-center">
+        carousel
+    </div>
+    <footer>
+        <p class="margin-no">below viewport</p>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+
+            var $carousel = $('.carousel');
+            
+            var carouselObj = {
+                'width': $carousel.outerWidth(),
+                'height': $carousel.outerHeight()
+            };
+            
+            console.log(carouselObj);
+        })();
+    </script>
+</body>
+
+</html>

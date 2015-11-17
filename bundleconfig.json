@@ -1,14 +1,32 @@
 [
   {
-    "outputFileName": "index.html",
+    "outputFileName": "dist/index.html",
     "inputFiles": [
       "index.html"
     ]
   },
   {
-    "outputFileName": "js/modernizer-custom.js",
+    "outputFileName": "dist/off-canvas.html",
+    "inputFiles": [
+      "_off-canvas.html"
+    ]
+  },
+  {
+    "outputFileName": "dist/responsive-carousel.html",
+    "inputFiles": [
+      "_responsive-carousel.html"
+    ]
+  },
+  {
+    "outputFileName": "dist/js/vendor.js",
     "inputFiles": [
       "js/modernizer-custom.js"
+    ]
+  },
+  {
+    "outputFileName": "dist/js/load.js",
+    "inputFiles": [
+      "js/loadCSS.js"
     ]
   }
 ]

@@ -1,18 +1,26 @@
 ﻿[
   {
-    "outputFile": "css/main.css",
-    "inputFile": "css/main.scss"
+    "outputFile": "dist/css/main.css",
+    "inputFile": "scss/pages/main.scss"
   },
   {
-    "outputFile": "css/prototypes/responsive-carousel.css",
-    "inputFile": "css/prototypes/responsive-carousel.scss"
+    "outputFile": "dist/css/main-mobile.css",
+    "inputFile": "scss/pages/main-mobile.scss"
   },
   {
-    "outputFile": "css/prototypes/off-canvas.css",
-    "inputFile": "css/prototypes/off-canvas.scss"
+    "outputFile": "dist/css/main-tablet.css",
+    "inputFile": "scss/pages/main-tablet.scss"
   },
   {
-    "outputFile": "js/pf-site.es5.js",
+    "outputFile": "dist/css/off-canvas.css",
+    "inputFile": "scss/pages/off-canvas.scss"
+  },
+  {
+    "outputFile": "dist/css/responsive-carousel.css",
+    "inputFile": "scss/pages/responsive-carousel.scss"
+  },
+  {
+    "outputFile": "dist/js/pf-site.es5.js",
     "inputFile": "js/pf-site.js"
   }
 ]

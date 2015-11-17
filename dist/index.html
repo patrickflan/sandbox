@@ -9,13 +9,9 @@
     <base target="_blank">
     <title>Patrick Flanagan - Front-end UI Developer</title>
     <link rel="stylesheet" href="css/main.min.css" />
-    <script type="text/javascript" id="loadcss">
-        
-
-    </script>
-    <!--<link rel="stylesheet" href="css/main-mobile.min.css" media="(max-width: 736px)" />
+    <link rel="stylesheet" href="css/main-mobile.min.css" media="(max-width: 736px)" />
     <link rel="stylesheet" href="css/main-tablet.min.css" media="(min-width: 737px) and (max-width: 1280px)" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
 </head>
 <body>
     <nav class="site-nav">
@@ -89,7 +85,7 @@
                     Time Period: April 2006 - October 2009
                 </p>
             </section>
-        </main>
+        </main> 
     </div>
     <header class="site-header">
         <a href="" class="off-canvas-trigger">
@@ -108,16 +104,6 @@
     <script type="text/javascript" src="js/vendor.min.js"></script>
     <script type="text/javascript" src="js/pf-site.es5.min.js"></script>
     <script type="text/javascript">
-        /*!
-        loadCSS: load a CSS file asynchronously.
-        [c]2015 @scottjehl, Filament Group, Inc.
-        Licensed MIT
-        */
-        (function (n) { "use strict"; var t = function (t, i, r) { var e = n.document, u = e.createElement("link"), f, s, h, o; return i ? f = i : (s = (e.body || e.getElementsByTagName("head")[0]).childNodes, f = s[s.length - 1]), h = e.styleSheets, u.rel = "stylesheet", u.href = t, u.media = "only x", f.parentNode.insertBefore(u, i ? f : f.nextSibling), o = function (n) { for (var i = u.href, t = h.length; t--;) if (h[t].href === i) return n(); setTimeout(function () { o(n) }) }, u.onloadcssdefined = o, o(function () { u.media = r || "all" }), u }; typeof module != "undefined" ? module.exports = t : n.loadCSS = t })(typeof global != "undefined" ? global : this);
-        loadCSS('css/main-mobile.min.css', '', '(max-width: 736px)', document.getElementById("loadcss"));
-        //loadCSS('css/main-tablet.min.css', '', '(min-width: 737px) and (max-width: 1280px)');
-        //loadCSS('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
-
         WebFontConfig = {
             google: { families: ['Droid+Sans::latin', 'Sumana::latin'] }
         };

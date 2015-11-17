@@ -9,8 +9,6 @@
         }
     };
 
-    $('.site-header')
-
     // site-nav event
     _pf.props.$siteNav.on('click', 'a', function (event) {
         event.preventDefault(event);

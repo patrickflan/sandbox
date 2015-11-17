@@ -376,20 +376,21 @@ body.open .off-canvas-trigger {
     .background-image.banner-one {
       background-image: url(/images/banner-one/Image-Test_2000x2000_q8.jpg); } }
 
-/*.time-crop {
-    margin-bottom: 18px;
-    display: block;
-    height: 75px;
-    overflow:hidden;
-}*/
 .time {
   display: block;
   position: relative;
   margin: 0 auto 18px;
   height: 200px;
   width: 200px;
-  background-image: url(../images/time-c.jpg);
+  background-image: url(/images/time-c.jpg);
   border-radius: 24rem;
   transition: all 300ms ease-in;
   box-shadow: inset 0px 0px 0px 5px rgba(225, 225, 225, 0.5); }
+
+/*.time-crop {
+    margin-bottom: 18px;
+    display: block;
+    height: 75px;
+    overflow:hidden;
+}*/
 
