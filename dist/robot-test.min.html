@@ -10,5 +10,5 @@ print('red: '+redRobot.attackPower);print('bomb: '+bombRobot.attackPower);print(
 print('red: '+redRobot.health);print('bomb: '+bombRobot.health);print();print();print('PROBLEM 5: Here we have a charging station, implement a singleton pattern so that we can only ever have one charging station');var ChargingStation=(function(){var availableCharge=1000
 return{charge:function(anotherRobot){anotherRobot.health>0?anotherRobot.health=100:anotherRobot.health+=100;console.log(anotherRobot.health)
 availableCharge-=100;},chargeLeft:function(){return availableCharge;}}}());redRobot=new Robot();redRobot.health=40;print('Health and Charge Before:')
-print('red: '+redRobot.health);print('charge: '+ChargingStation.chargeLeft());print();print('Red charge:');ChargingStation.charge(redRobot);print();print('Health After')
+print('red: '+redRobot.health);print('charge: '+ChargingStation.chargeLeft());print();print('Red charge:');ChargingStation.charge(redRobot);print();print('Health and Charge After')
 print('red: '+redRobot.health);print('charge: '+ChargingStation.chargeLeft());print();function print(str){if(!str)str='';document.write(str+"<br>");}</script></body></html>
