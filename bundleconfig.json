@@ -18,15 +18,15 @@
     ]
   },
   {
-    "outputFileName": "dist/js/vendor.js",
+    "outputFileName": "dist/robot-test.html",
     "inputFiles": [
-      "js/modernizer-custom.js"
+      "_robot-test.html"
     ]
   },
   {
-    "outputFileName": "dist/js/load.js",
+    "outputFileName": "dist/js/vendor.js",
     "inputFiles": [
-      "js/loadCSS.js"
+      "js/modernizer-custom.js"
     ]
   }
 ]

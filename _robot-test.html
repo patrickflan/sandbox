@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Robot Test</title>
+    <meta name="description" content="" />
+    <meta charset="utf-8" />
+    <meta name="author" content="//update.me">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <base target="_blank">
+    <title>Patrick Flanagan - Front-end UI Developer</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //////////////////////////////
+        // This is the definition of a Robot
+        function Robot() {
+
+            // 'this' refers to the Robot instance
+            this.health = 100;
+        }
+
+        // 'prototype' will change all future new Robots
+        Robot.prototype.attackPower = 10;
+        Robot.prototype.attack = function (anotherRobot) {
+            // attack a robot!
+            this.attackPower > anotherRobot.attackPower && this.attackPower > 100 ? this.health = 0 : anotherRobot.health -= this.attackPower;
+
+        }
+
+        //////////////////////////////
+        // Now lets start the test
+
+        var redRobot, blueRobot;
+
+        // Notice Robots have health
+
+        redRobot = new Robot();
+        blueRobot = new Robot();
+
+        print('red health: ' + redRobot.health);
+        print('blue health: ' + blueRobot.health);
+        print();
+
+        // Notice also that Robots have attack power
+
+        redRobot = new Robot();
+        blueRobot = new Robot();
+
+        print('red attack power: ' + redRobot.attackPower);
+        print('blue attack power: ' + blueRobot.attackPower);
+        print();
+
+        // And Robots have an attack function
+
+        redRobot = new Robot();
+        blueRobot = new Robot();
+
+        print('red attack fuction: ' + redRobot.attack);
+        print('blue attack function: ' + blueRobot.attack);
+        print();
+
+        // ROBLEM 1: fill in the attack function! Use the attack power to lower the other robot's health
+        print('PROBLEM 1: fill in the attack function! Use the attack power to lower the other robot\'s health');
+        redRobot = new Robot();
+        blueRobot = new Robot();
+
+        print('red health before attack: ' + redRobot.health);
+        print('blue health before attack: ' + blueRobot.health);
+
+        redRobot.attack(blueRobot);
+
+        print('red health after attack: ' + redRobot.health);
+        print('blue health after attack: ' + blueRobot.health);
+        print();
+
+        //PROBLEM 2: Modify the red robot's attack power so that it drops the blue robot's health to 0 in one attack'
+        print('PROBLEM 2: Modify the red robot\'s attack power so that it drops the blue robot\'s health to 0 in one attack');
+        redRobot = new Robot();
+        blueRobot = new Robot();
+
+        redRobot.attackPower = 100;
+
+        print('blue health before attack: ' + blueRobot.health);
+
+        redRobot.attack(blueRobot);
+
+        print('blue health after attack: ' + blueRobot.health + '. Is it zero? ' + (blueRobot.health === 0));
+        print();
+
+        // PROBLEM 3: One robot has more attack power than the other! redRobot\'s attack should backfire and damage its own health.
+        print('PROBLEM 3: One robot has more attack power than the other! redRobot\'s attack should backfire and damage its own health.');
+        redRobot = new Robot();
+        blueRobot = new Robot();
+        redRobot.attackPower = 110;
+        print('Health Before:')
+        print('red: ' + redRobot.health);
+        print('blue: ' + blueRobot.health);
+        print();
+
+        print('Attack Power:')
+        print('red: ' + redRobot.attackPower);
+        print('blue: ' + blueRobot.attackPower);
+        print('total power: ' + (redRobot.attackPower + blueRobot.attackPower));
+        print();
+
+        redRobot.attack(blueRobot);
+
+        print('Health After')
+        print('red: ' + redRobot.health);
+        print('blue: ' + blueRobot.health);
+        print();
+
+        // PROBLEM 4: Here's a kind of robot that is a lot like the original Robot. Modify it so that uses a Robot object to track its stats and attack function.
+        // (as apposed to reproducing that logic here) In other words, make it extend the Robot type
+        print('PROBLEM 4: Here\'s a kind of robot that is a lot like the original Robot. Modify it so that uses a Robot object to track its stats and attack function. (as apposed to reproducing that logic here) In other words, make it extend the Robot type')
+        redRobot = new Robot();
+        bombRobot = new Robot();
+        bombRobot.health = 25;
+        bombRobot.attackPower = 500;
+        bombRobot.attack = function (anotherRobot) {
+            anotherRobot.health -= this.health;
+            this.health = 0;
+        };
+
+        print('Health Before:')
+        print('red: ' + redRobot.health);
+        print('bomb: ' + bombRobot.health);
+        print();
+
+        print('Attack Power:')
+        print('red: ' + redRobot.attackPower);
+        print('bomb: ' + bombRobot.attackPower);
+        print('total power: ' + (redRobot.attackPower + bombRobot.attackPower));
+        print();
+
+        print('Red attack Bomb:');
+
+        bombRobot.attack(redRobot);
+
+        print();
+
+        print('Health After')
+        print('red: ' + redRobot.health);
+        print('bomb: ' + bombRobot.health);
+        print();
+
+
+
+        // PROBLEM 5: Here we have a charging station, implement a singleton pattern so that we can only ever have one charging station
+        print();
+        print('PROBLEM 5: Here we have a charging station, implement a singleton pattern so that we can only ever have one charging station');
+        var ChargingStation = (function () {
+            var availableCharge = 1000
+
+            return {
+                charge: function (anotherRobot) {
+                    anotherRobot.health > 0 ? anotherRobot.health = 100 : anotherRobot.health += 100;
+                    console.log(anotherRobot.health)
+                    //anotherRobot.health += 100;
+                    availableCharge -= 100;
+                },
+                chargeLeft: function () {
+                    return availableCharge;
+                }
+            }
+        }());
+
+        redRobot = new Robot();
+        redRobot.health = 40;
+
+        print('Health and Charge Before:')
+        print('red: ' + redRobot.health);
+        print('charge: ' + ChargingStation.chargeLeft());
+        print();
+
+
+        print('Red charge:');
+
+        ChargingStation.charge(redRobot);
+
+        print();
+
+        print('Health After')
+        print('red: ' + redRobot.health);
+        print('charge: ' + ChargingStation.chargeLeft());
+        print();
+
+        function print(str) {
+            if (!str) str = '';
+            document.write(str + "<br>");
+        }
+
+    </script>
+</body>
+
+</html>

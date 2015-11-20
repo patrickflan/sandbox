@@ -9,13 +9,10 @@
     <base target="_blank">
     <title>Patrick Flanagan - Front-end UI Developer</title>
     <link rel="stylesheet" href="css/main.min.css" />
-    <script type="text/javascript" id="loadcss">
-        
-
-    </script>
-    <!--<link rel="stylesheet" href="css/main-mobile.min.css" media="(max-width: 736px)" />
+    <link rel="stylesheet" href="css/main-mobile.min.css" media="(max-width: 736px)" />
     <link rel="stylesheet" href="css/main-tablet.min.css" media="(min-width: 737px) and (max-width: 1280px)" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="css/main-desktop.min.css" media="(min-width: 1281px)" />
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
 </head>
 <body>
     <nav class="site-nav">
@@ -66,8 +63,8 @@
                     <li>Some Knowledge - Adobe Contribute®, Adobe After Effects®, NPM, Node.JS</li>
                 </ul>
             </section>
-            <section>
-                <h3 class="margin-md-bottom">Work History</h3>
+            <section data-uk-scrollspy="{cls:'uk-animation-fade', target:'.myclass', delay:300}">
+                <h3 class="margin-md-bottom myclass">Work History</h3>
                 <h4>Healthgrades</h4>
                 <p>
                     Title: Sr. User Interface Application Developer, Strategic Technology Solutions (STS)<br />
@@ -75,7 +72,7 @@
                     Time Period: Sept. 2010 - Present
                 </p>
 
-                <h4>Crocs</h4>
+                <h4 class="myclass">Crocs</h4>
                 <p>
                     Title: UI Developer<br />
                     Location: Niwot, CO<br />
@@ -99,25 +96,13 @@
     </header>
     <!--
         // things todo
-        1) setTimeout should only apply when off canvas is available
-        2) scrollTo offset should account for fixed nav
-        3) offcanvas and fixed header needs rethinking do to translate3d
+        1) site nav, remove btn tweak and have mobile friend full width
     -->
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/vendor.min.js"></script>
     <script type="text/javascript" src="js/pf-site.es5.min.js"></script>
     <script type="text/javascript">
-        /*!
-        loadCSS: load a CSS file asynchronously.
-        [c]2015 @scottjehl, Filament Group, Inc.
-        Licensed MIT
-        */
-        (function (n) { "use strict"; var t = function (t, i, r) { var e = n.document, u = e.createElement("link"), f, s, h, o; return i ? f = i : (s = (e.body || e.getElementsByTagName("head")[0]).childNodes, f = s[s.length - 1]), h = e.styleSheets, u.rel = "stylesheet", u.href = t, u.media = "only x", f.parentNode.insertBefore(u, i ? f : f.nextSibling), o = function (n) { for (var i = u.href, t = h.length; t--;) if (h[t].href === i) return n(); setTimeout(function () { o(n) }) }, u.onloadcssdefined = o, o(function () { u.media = r || "all" }), u }; typeof module != "undefined" ? module.exports = t : n.loadCSS = t })(typeof global != "undefined" ? global : this);
-        loadCSS('css/main-mobile.min.css', '', '(max-width: 736px)', document.getElementById("loadcss"));
-        //loadCSS('css/main-tablet.min.css', '', '(min-width: 737px) and (max-width: 1280px)');
-        //loadCSS('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
-
         WebFontConfig = {
             google: { families: ['Droid+Sans::latin', 'Sumana::latin'] }
         };
