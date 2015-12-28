@@ -1,4 +1,7 @@
-﻿.site-nav {
+﻿.site-header {
+  box-shadow: #888888 0 0 10px 0; }
+
+.site-nav {
   height: 100%; }
   .site-nav .btn {
     width: 100%; }

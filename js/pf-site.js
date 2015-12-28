@@ -2,12 +2,15 @@
     var _pf = _pf || {}; 
 
     _pf.props = {
+        $siteHeader: $('.site-header'),
         $siteNav: $('.site-nav'),
         $offCanvas: {
             trigger: $('.off-canvas-trigger'),
             open: false
-        }
+        },
+        scrollSpeed: 1000
     };
+
 
     // site-nav event
     _pf.props.$siteNav.on('click', 'a', function (event) {
@@ -36,8 +39,8 @@
     _pf.sectionScroll = function ($that) {
         if ($that) {
             $('html, body').animate({
-                scrollTop: $($that.attr('href')).offset().top - $('.site-header').outerHeight()
-            }, 1000);
+                scrollTop: $($that.attr('href')).offset().top - _pf.props.$siteHeader.outerHeight()
+            }, _pf.props.scrollSpeed);
 
         }
     };

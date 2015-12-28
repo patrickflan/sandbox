@@ -238,8 +238,7 @@ body.open .off-canvas-trigger {
   background: #fff;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
-  transition: transform 500ms ease;
-  box-shadow: #888888 0px 0px 10px 0px; }
+  transition: transform 500ms ease; }
   .site-header .header-logo {
     font-size: 26px;
     font-family: 'Droid Sans', sans-serif; }

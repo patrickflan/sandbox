@@ -12,15 +12,15 @@
     <link rel="stylesheet" href="css/main-mobile.min.css" media="(max-width: 736px)" />
     <link rel="stylesheet" href="css/main-tablet.min.css" media="(min-width: 737px) and (max-width: 1280px)" />
     <link rel="stylesheet" href="css/main-desktop.min.css" media="(min-width: 1281px)" />
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav class="site-nav">
         <a href="#pf-resume" class="btn link-resume">Resume</a>
         <a href="#pf-prototypes" class="btn link-prototypes">Prototypes</a>
+        <a href="#pf-quizs" class="btn link-prototypes">Quiz's</a>
     </nav>
     <div class="off-canvas">
-
         <main>
             <section class="vh75 background-image size-cover x-center y-top fixed aurora-borealis">
                 <div class="hero middle">
@@ -35,10 +35,24 @@
                 </div>
             </section>
             <section id="pf-prototypes">
-                <h3 class="margin-md-bottom">Responsive Carousel</h3>
-                <a href="responsive-carousel.html" class="btn margin-lg-bottom">view demo</a>
-                <h3 class="margin-md-bottom">Off Canvas</h3>
-                <a href="off-canvas.html" class="btn">view demo</a>
+                <h2>Prototypes</h2>
+                <div class="row">
+                    <div class="col">
+                        <h3 class="margin-md-bottom">Responsive Carousel</h3>
+                        <a href="responsive-carousel.html" class="btn margin-lg-bottom">view demo</a>
+                    </div>
+                    <div class="col">
+                        <h3 class="margin-md-bottom">Off Canvas</h3>
+                        <a href="off-canvas.html" class="btn">view demo</a>
+                    </div>
+                </div>
+            </section>
+            <section id="pf-quizs">
+                <h2>Quiz's</h2>
+                <h3 class="margin-md-bottom">JavaScript - Robot Quiz</h3>
+                <a href="robot-test.html" class="btn margin-lg-bottom">view demo</a> - <a href="http://codepen.io/hgpflanagan/pen/vNPeOP" class="btn margin-lg-bottom">codepen</a>
+                <h3 class="margin-md-bottom">Button Recreation</h3>
+                <a href="http://codepen.io/hgpflanagan/pen/meoMrK" class="btn">codepen</a>
             </section>
             <section id="pf-resume" class="color-invert background-image size-cover x-center y-top fixed banner-one">
                 <h3 class="margin-md-bottom">Objective</h3>
@@ -92,7 +106,7 @@
         <a href="" class="off-canvas-trigger">
             <i class="fa fa-bars"></i>
         </a>
-        <span class="header-logo"><strong>Patrick</strong> Flanagan</span>
+        <a class="header-logo"><strong>Patrick</strong> Flanagan</a>
     </header>
     <!--
         // things todo
