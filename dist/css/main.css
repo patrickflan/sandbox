@@ -54,6 +54,12 @@ img {
   h3 {
     font-size: 2.35rem; } }
 
+section:hover .btn {
+  background: white; }
+
+section:hover .btn:hover {
+  background: #FF6F69; }
+
 .btn {
   background: #F0F0F0;
   display: inline-block;
@@ -74,9 +80,13 @@ section {
   padding: 1rem;
   width: 100%;
   box-sizing: border-box;
-  position: relative; }
+  position: relative;
+  transition: background 250ms ease-in; }
   section > p {
     margin-top: 0; }
+  section:hover {
+    background: #F0F0F0;
+    transition: background 250ms ease-in; }
   section.vh75 {
     height: 75vh; }
   section.vh50 {

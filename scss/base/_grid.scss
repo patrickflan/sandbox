@@ -9,8 +9,13 @@ section {
     width: 100%;
     box-sizing: border-box;
     position: relative;
+    transition: background 250ms ease-in;
     > p {
         margin-top: 0;
+    }
+    &:hover {
+        background: $color-medium-lite;
+        transition: background 250ms ease-in;
     }
     &.vh75 {
         height: 75vh;

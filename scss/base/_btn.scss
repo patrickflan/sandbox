@@ -1,11 +1,19 @@
-﻿.btn {
+﻿section:hover {
+    .btn {
+        background: white;
+    }
+    .btn:hover {
+        background: $color-primary;
+    }
+}
+
+.btn {
     background: $color-medium-lite;
     display: inline-block;
     padding: $xsm-sizing;
     box-sizing: border-box;
     text-decoration: none;
     border-radius: .2rem;
-    
     transition: all 200ms ease;
     &.btn-block {
         display: block;
@@ -17,3 +25,4 @@
         transition: color 250ms ease, background 700ms ease, box-shadow 2000ms ease;
     }
 }
+
