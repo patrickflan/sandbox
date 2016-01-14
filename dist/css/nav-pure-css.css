@@ -6,7 +6,11 @@
 .main-nav {
   background: #fff;
   padding: 25px;
-  border-radius: 20px; }
+  border-radius: 20px;
+  width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 300ms ease-in; }
   .main-nav__trigger {
     display: inline-block;
     vertical-align: middle;
@@ -45,17 +49,25 @@
         transition-delay: transform 100ms;*/ }
     .main-nav__item:hover {
       color: #FF6F69; }
-  .main-nav input[type="checkbox"] {
-    display: none; }
-  .main-nav input[type="checkbox"]:checked ~ .main-nav__trigger:after {
-    animation: mainNavTriggerAfter 500ms ease-in;
-    animation-fill-mode: forwards; }
-  .main-nav input[type="checkbox"]:checked ~ .main-nav__trigger:before {
-    animation: mainNavTriggerBefore 500ms ease-in;
-    animation-fill-mode: forwards; }
-  .main-nav input[type="checkbox"]:checked ~ .main-nav__item {
-    opacity: 1;
-    animation: mainNavItems 1.3s ease-in-out; }
+
+#mainNavToggle {
+  display: none; }
+
+#mainNavToggle:checked ~ .main-nav > .main-nav__trigger:after {
+  animation: mainNavTriggerAfter 240ms ease-in;
+  animation-fill-mode: forwards; }
+
+#mainNavToggle:checked ~ .main-nav > .main-nav__trigger:before {
+  animation: mainNavTriggerBefore 240ms ease-in;
+  animation-fill-mode: forwards; }
+
+#mainNavToggle:checked ~ .main-nav .main-nav__item {
+  opacity: 1;
+  animation: mainNavItems 1.3s ease-in-out; }
+
+#mainNavToggle:checked ~ .main-nav {
+  width: 100%;
+  transition: width 300ms ease-in; }
 
 @keyframes mainNavTriggerAfter {
   20% {
