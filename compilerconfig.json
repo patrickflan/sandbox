@@ -16,6 +16,10 @@
     "inputFile": "scss/pages/main-desktop.scss"
   },
   {
+    "outputFile": "dist/css/nav-pure-css.css",
+    "inputFile": "scss/pages/nav-pure-css.scss"
+  },
+  {
     "outputFile": "dist/css/off-canvas.css",
     "inputFile": "scss/pages/off-canvas.scss"
   },

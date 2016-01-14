@@ -60,9 +60,15 @@ img {
   padding: 0.5rem;
   box-sizing: border-box;
   text-decoration: none;
-  border-radius: .2rem; }
+  border-radius: .2rem;
+  transition: all 200ms ease; }
   .btn.btn-block {
     display: block; }
+  .btn:hover {
+    background: #FF6F69;
+    color: #fff;
+    box-shadow: 0 0 41px 3px rgba(255, 111, 105, 0.4);
+    transition: color 250ms ease, background 700ms ease, box-shadow 2000ms ease; }
 
 section {
   padding: 1rem;

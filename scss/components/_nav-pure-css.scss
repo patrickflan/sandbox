@@ -1,0 +1,32 @@
+﻿.off-canvas {
+    background: #fff;
+    @media screen and (min-width: 250px) and (max-width: 760px) {
+        padding-top: 50px;
+        position: relative;
+        transform: translate3d(0, 0, 0);
+        transition: transform 500ms ease; 
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 80px;
+    }
+}
+body.open {
+    .site-header, .off-canvas {
+        transform: translate3d(#{$half}, 0, 0);
+        transition: transform 500ms ease;
+    }
+    .off-canvas {
+        box-shadow: #888 0 0 10px 0;
+    }
+    .site-nav {
+        opacity: 1;
+        transition: all 500ms ease;
+        left: 0;
+    }
+    .off-canvas-trigger {
+        opacity: 1;
+        transition: opacity 700ms ease-in;
+        background: $color-primary;
+    }
+}

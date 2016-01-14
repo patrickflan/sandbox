@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Robot Test</title>
@@ -61,9 +61,7 @@
         print();
 
         // ROBLEM 1: fill in the attack function! Use the attack power to lower the other robot's health
-        print('<strong>PROBLEM 1: fill in the attack function! Use the attack power to lower the other robot\'s health</strong>');
-        print();
-
+        print('PROBLEM 1: fill in the attack function! Use the attack power to lower the other robot\'s health');
         redRobot = new Robot();
         blueRobot = new Robot();
 
@@ -77,12 +75,11 @@
         print();
 
         //PROBLEM 2: Modify the red robot's attack power so that it drops the blue robot's health to 0 in one attack'
-        print('<strong>PROBLEM 2: Modify the red robot\'s attack power so that it drops the blue robot\'s health to 0 in one attack</strong>');
-        print();
-
+        print('PROBLEM 2: Modify the red robot\'s attack power so that it drops the blue robot\'s health to 0 in one attack');
         redRobot = new Robot();
-        redRobot.attackPower = 100;
         blueRobot = new Robot();
+
+        redRobot.attackPower = 100;
 
         print('blue health before attack: ' + blueRobot.health);
 
@@ -92,13 +89,10 @@
         print();
 
         // PROBLEM 3: One robot has more attack power than the other! redRobot\'s attack should backfire and damage its own health.
-        print('<strong>PROBLEM 3: One robot has more attack power than the other! redRobot\'s attack should backfire and damage its own health.</strong>');
-        print();
-
+        print('PROBLEM 3: One robot has more attack power than the other! redRobot\'s attack should backfire and damage its own health.');
         redRobot = new Robot();
-        redRobot.attackPower = 110;
         blueRobot = new Robot();
-
+        redRobot.attackPower = 110;
         print('Health Before:')
         print('red: ' + redRobot.health);
         print('blue: ' + blueRobot.health);
@@ -119,9 +113,7 @@
 
         // PROBLEM 4: Here's a kind of robot that is a lot like the original Robot. Modify it so that uses a Robot object to track its stats and attack function.
         // (as apposed to reproducing that logic here) In other words, make it extend the Robot type
-        print('<strong>PROBLEM 4: Here\'s a kind of robot that is a lot like the original Robot. Modify it so that uses a Robot object to track its stats and attack function. (as apposed to reproducing that logic here) In other words, make it extend the Robot type</strong>')
-        print();
-
+        print('PROBLEM 4: Here\'s a kind of robot that is a lot like the original Robot. Modify it so that uses a Robot object to track its stats and attack function. (as apposed to reproducing that logic here) In other words, make it extend the Robot type')
         redRobot = new Robot();
         bombRobot = new Robot();
         bombRobot.health = 25;
@@ -130,9 +122,6 @@
             anotherRobot.health -= this.health;
             this.health = 0;
         };
-
-        print('bombRobot attack: ' + bombRobot.attack);
-        print();
 
         print('Health Before:')
         print('red: ' + redRobot.health);
@@ -145,8 +134,10 @@
         print('total power: ' + (redRobot.attackPower + bombRobot.attackPower));
         print();
 
-        print('Bomb attack Red:');
+        print('Red attack Bomb:');
+
         bombRobot.attack(redRobot);
+
         print();
 
         print('Health After')
@@ -154,10 +145,11 @@
         print('bomb: ' + bombRobot.health);
         print();
 
-        // PROBLEM 5: Here we have a charging station, implement a singleton pattern so that we can only ever have one charging station
-        print('<strong>PROBLEM 5: Here we have a charging station, implement a singleton pattern so that we can only ever have one charging station</strong>');
-        print();
 
+
+        // PROBLEM 5: Here we have a charging station, implement a singleton pattern so that we can only ever have one charging station
+        print();
+        print('PROBLEM 5: Here we have a charging station, implement a singleton pattern so that we can only ever have one charging station');
         var ChargingStation = (function () {
             var availableCharge = 1000
 
@@ -182,8 +174,11 @@
         print('charge: ' + ChargingStation.chargeLeft());
         print();
 
-        print('Charging Red:');
+
+        print('Red charge:');
+
         ChargingStation.charge(redRobot);
+
         print();
 
         print('Health and Charge After')

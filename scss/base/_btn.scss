@@ -5,7 +5,15 @@
     box-sizing: border-box;
     text-decoration: none;
     border-radius: .2rem;
+    
+    transition: all 200ms ease;
     &.btn-block {
         display: block;
+    }
+    &:hover {
+        background: $color-primary;
+        color: #fff;
+        box-shadow:0 0 41px 3px rgba(255, 111, 105, 0.40);
+        transition: color 250ms ease, background 700ms ease, box-shadow 2000ms ease;
     }
 }
