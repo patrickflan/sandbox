@@ -7,10 +7,11 @@
   background: #fff;
   padding: 25px;
   border-radius: 20px;
-  width: 50px;
+  width: 100px;
   overflow: hidden;
   white-space: nowrap;
-  transition: width 300ms ease-in; }
+  transition: width 300ms ease-in;
+  box-sizing: border-box; }
   .main-nav__trigger {
     display: inline-block;
     vertical-align: middle;
@@ -43,10 +44,7 @@
     border-radius: 10px;
     text-decoration: none;
     opacity: 0;
-    transition: opacity 250ms ease;
-    /*transform: rotateY(-70deg);
-        transition: opacity 250ms ease, transform 250ms ease;
-        transition-delay: transform 100ms;*/ }
+    transition: opacity 250ms ease; }
     .main-nav__item:hover {
       color: #FF6F69; }
 
